@@ -13,4 +13,6 @@ Group Project:
 
 For the project, we can use whatever crappy ole thing we want, like Rails or Node or Meteor but never PHP. Make a little babby mockup in Meteor to convince them of that being the worlds easiest technology.
 
-Software is hard to understand, easy to reproduce (low cost, and you can just hit copy and paste to reproduce it), and labor intensive (you can't automate it).
+Software is hard to understand, easy to reproduce (low cost, and you can just hit copy and paste to reproduce it), and labor intensive (you can't automate it)
+
+Sofrware can never be perfect..
