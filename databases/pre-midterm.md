@@ -24,5 +24,4 @@ Types of Database Applications:
 - Two tier: less than 100 users, client/server communicate directly.
 - Three tier: less than 1000 users, client/server communicate through some application server (like a web server) which talks to a database management system).
 
-
-
+This course is basically just about SQL databases, and Allaire likes to use MS Access. As a mac user, this is a real kick in the dick.
