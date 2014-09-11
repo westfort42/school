@@ -72,7 +72,7 @@ Things I think are actually valuable in real life:
 
 ######Back To Agile Wizardry
 Super Important Stuff
-- Focus on freauent delivery of software
+- Focus on frequent delivery of software
 - Complete each feature before moving onto the next
 - Apply the 80/20 principle (80% of work is produced by 20% of the system. I think this means that for every 100 lines of code, 80 should be unit tests. The other 20 should be functional tests you amateur)
 - Testing is integrated throughout the project
@@ -82,7 +82,7 @@ Getting away from Agile and back to the classsic approach, lets look at...
 
 ####Domain Analysis
 
-This is the process by which the software engineer learns about the problem they're trying to solve. A domain expert is the guy who knows the most about the problem, or the filed the problem is in. Also, if your software doesn't solve any problems, turn off your computer and go something else.
+This is the process by which the software engineer learns about the problem they're trying to solve. A domain expert is the guy who knows the most about the problem, or the field the problem is in. Also, if your software doesn't solve any problems, turn off your computer and go something else.
 
 The domain analysis doc is a real pile of crap. There's just no way you need all these letters,
 A. Intro
@@ -96,5 +96,17 @@ There're more but I didn't write it down.
 ####Defining the Problem and the Scope
 Write down what the problem is on a napkin and give it to your boss, who will give it to the investors. Next step please.
 But for real, the problem's definition should be short enough that you can say the whole thing during an elevator ride ("the elevator pitch").
+
+####What is the Requirement?
+
+It's a statment describing what the proposed system should do. Its **not** "delighting users and investors". This isn't the article you wrote on [http://medium.com](Medium) about your startup. If you're a lawyer at IBM, it's also the negotiated agreement between all the stakeholders.
+
+Types of requirements:
+1. Functional requirements - what the thing should do. What're the input devices? How about the output? Is there a DB? Is it synchronous? 
+2. Quality requirements - how good it should be. Usually, you'll want to put "good" and "secure". Quality requirements must be *verifiable*, so its stuff like response time, throughput, reiability/availability, failure recovery, etc.
+3. Platform requirements - constraints on the environment and tech. In 2002, its always "JVM". In 2014, its always "web". In 2016, its always "Oculus Rift". 
+4. Process requirements - constraints on the plans and methods. I don't know what the point of this one is.
+
+If you don't understand any of this, try looking at the README for any succesful open source project.
 
 
