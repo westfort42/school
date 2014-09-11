@@ -102,6 +102,7 @@ But for real, the problem's definition should be short enough that you can say t
 It's a statment describing what the proposed system should do. Its **not** "delighting users and investors". This isn't the article you wrote on [http://medium.com](Medium) about your startup. If you're a lawyer at IBM, it's also the negotiated agreement between all the stakeholders.
 
 Types of requirements:
+
 1. Functional requirements - what the thing should do. What're the input devices? How about the output? Is there a DB? Is it synchronous? 
 2. Quality requirements - how good it should be. Usually, you'll want to put "good" and "secure". Quality requirements must be *verifiable*, so its stuff like response time, throughput, reiability/availability, failure recovery, etc.
 3. Platform requirements - constraints on the environment and tech. In 2002, its always "JVM". In 2014, its always "web". In 2016, its always "Oculus Rift". 
