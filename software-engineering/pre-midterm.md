@@ -22,4 +22,79 @@ Lecture 2
 
 *Sep 11*
 
+We'll look at some different dev-lifecycle models.
+
+######The Waterfall Model
+1. Requirement Definition
+2. Software Design
+3. Implementation
+4. Testing
+5. Maintenance
+
+######Incremental Development
+- Outline Description
+- Specification, dev, tests are done concurrently (think Test-Driven-Development)
+- Several versions are developed until project requirements are satisfied
+*This is kind of like Agile development*
+
+######Agile
+Agile is a buzzword that means different things. According to this course, agile dev is as follows:
+
+"We are uncovering better ways of developing software by doing it and helping others do it. Through this work, we have come to value
+- Individuals and interactions over processes and tools
+- Working software over comprehensive docs
+- Customer collaboration over contract negotiation
+- Responding to change over following a plan
+
+That is, while there is value in the items on the right, we value the items on the left more."
+
+Principles:
+
+- Active user involvment is imperative
+- The team must be empowered to make decisions
+- Requirements evolve but timescale is fixed
+- Capture ligthweight requirements at a high level
+- Develop small, incremental releases and iterate
+
+Great. This course will cover "classic" software engineering, but will also cover "the new hipster shit". *(Not an actual quote from Dr. Wei)*
+
+######More Buzzwords
+- *Agile* methods are incremental dev methods invented by Rails programmers at 37Signals.
+- *Extreme programming* and *scrum* methods are widely used Agile methods, used by recruiters at IBM to attract 19 year old Fortran developers.
+- Many small and medium companies and teams use these methods, since in large companies, nothing is ever easy like it is in small companies. Oh, you're at big company and you to change a while statement to a for loop? Good luck getting that one by management buddy.
+
+Honestly in 2014,  if you use microservices instead of large frameworks, write modular code, write tests and follow SemVer, you'll be a-ok :)
+
+Things I think are actually valuable in real life:
+- Using UMLs where appropriate
+- Defining DB schema even in NoSQL DBs
+- Following SemVer, using a software repo, using version control
+
+######Back To Agile Wizardry
+Super Important Stuff
+- Focus on freauent delivery of software
+- Complete each feature before moving onto the next
+- Apply the 80/20 principle (80% of work is produced by 20% of the system. I think this means that for every 100 lines of code, 80 should be unit tests. The other 20 should be functional tests you amateur)
+- Testing is integrated throughout the project
+- A collaborative and cooperative approach between all stakeholders is essential as heck
+
+Getting away from Agile and back to the classsic approach, lets look at...
+
+####Domain Analysis
+
+This is the process by which the software engineer learns about the problem they're trying to solve. A domain expert is the guy who knows the most about the problem, or the filed the problem is in. Also, if your software doesn't solve any problems, turn off your computer and go something else.
+
+The domain analysis doc is a real pile of crap. There's just no way you need all these letters,
+A. Intro
+B. Glossary
+C. General knowledge about domain
+D. Customer and users
+E. Environment
+
+There're more but I didn't write it down.
+
+####Defining the Problem and the Scope
+Write down what the problem is on a napkin and give it to your boss, who will give it to the investors. Next step please.
+But for real, the problem's definition should be short enough that you can say the whole thing during an elevator ride ("the elevator pitch").
+
 
