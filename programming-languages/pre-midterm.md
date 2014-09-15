@@ -133,7 +133,7 @@ Tuples differ by records in that tuples are in a certain order:
 ```
 T = state(1 a 2)
 ```
-I *think* it's like an array where you don't have to allocate memory, and it can contain different data types. Accessing data in tuples with the dot operator is done like this: `T.1` returns 1, `T.2` returns a. <span style="color:red;">WARNING</span>: You start counting from *1* when dealing with tuples (not zero!!!).
+I *think* it's like an array where you don't have to allocate memory, and it can contain different data types. Accessing data in tuples with the dot operator is done like this: `T.1` returns 1, `T.2` returns a. <span style="color:red; !important">WARNING</span>: You start counting from *1* when dealing with tuples (not zero!!!).
 
 There's a really good example of a binary tree implementation in the lecture notes, go check that out.
 
@@ -149,7 +149,7 @@ L = john|(paul|(george|(ringo|nil))) % this is more like a tree than a linked li
 
 The first element is accessed by doing `L.1`, the rest is `L.2`. The `|` operator is used to *partition* lists (seperate list into two lists).
 
-#######Matrices
+######Matrices
 Like any other language, make a list of lists:
 ```
 M = [ [1 2] [3 4] [5 6] ]
