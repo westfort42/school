@@ -48,6 +48,8 @@ This way E-R Models actually work is way easier to understand when you're lookin
 Lab 1
 =====
 
+*Sep 15*
+
 Identifiers: there are two kinds.
 - Simple identifier: This is basically just its name in declaration. For example, 
 ```sql
@@ -60,4 +62,14 @@ BEGIN
 	a := 1
 END
 ```
+
+######Modeling Relationships
+*Relationship types* are lines between entity types, *relationship instances* are between specific entity instances. Relationships can have attributes (as mentioned before, these describe features describing the association between the entitites in the relationship).
+
+####The Relational Model
+- Data goes in tables
+- Stuff in tables has relationships between them
+
+For example, a relationship between an entity like a  car and an entity like a person is "drives" (person drives car). This was Allaire's wild example.
+
 
