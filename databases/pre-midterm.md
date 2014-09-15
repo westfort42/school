@@ -45,4 +45,19 @@ For example, say *Phone Number* instead of *PHNO* (or something weird like that)
 
 This way E-R Models actually work is way easier to understand when you're looking at one. Just rememer this explanation when you find yourself doing that :).
 
+Lab 1
+=====
+
+Identifiers: there are two kinds.
+- Simple identifier: This is basically just its name in declaration. For example, 
+```sql
+DECLARE
+	a INTEGER;
+```
+- Complex identifier (also called qualified identifier): This is a reference to the identifier, instead of just it's name. For example,
+```sql
+BEGIN
+	a := 1
+END
+```
 
