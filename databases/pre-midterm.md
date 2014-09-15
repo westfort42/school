@@ -72,4 +72,5 @@ END
 
 For example, a relationship between an entity like a  car and an entity like a person is "drives" (person drives car). This was Allaire's wild example.
 
-
+######Cardinality
+This just means you can impose a limit on the amount of children a parent element has.
