@@ -43,7 +43,7 @@ For example, say *Phone Number* instead of *PHNO* (or something weird like that)
 
 **Mac User Tip**: Don't want to use MS Access? Try this trash <a href="https://itunes.apple.com/app/id417392270?mt=12">MDB ACCDB Viewer</a>. Also, Allaire was born in January.
 
-This way E-R Models actually work is way easier to understand when you're looking at one. Just rememer this explanation when you find yourself doing that :).
+This way E-R Models actually work is way easier to understand when you're looking at one. Just remember this explanation when you find yourself doing that :).
 
 Lab 1
 =====
@@ -74,3 +74,10 @@ For example, a relationship between an entity like a  car and an entity like a p
 
 ######Cardinality
 This just means you can impose a limit on the amount of children a parent element has.
+
+Lecture 4
+=========
+
+*Sep 14*
+
+
