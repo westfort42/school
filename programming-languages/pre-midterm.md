@@ -101,3 +101,86 @@ Defining procedures is different than defining functions.
 OZ Basic Data Types
 
 All the basic stuff is there, and programs can define other types (like abstract data types). There's a big tree in the slides that shows all the data types.
+
+Lecture 3
+=========
+
+*Sep 15*
+
+Mozart OZ defines declarative computations among other styles:
+- Independent: it computes irrespective of other computations (no coupling)
+- Stateless: each action is unrelated to the previous action (in Sabbah's words, "no side effects")
+- Deterministic: the same input will produce the same output
+
+*Recursion enforces independence* - will talk about this more later.
+
+Most modern languages implement arrays as lists -- this is because crappy arrays can only store data of the same type, and are of predefined size. Lists are dynamic -- put whatever data type you want in there, and don't even worry about what size it is.
+
+Just to make this part of the course even crazier, Mozart is *dynamically typed*. 
+
+######Records
+Like a hash table without the damn commas:
+```
+R = suit( shirt:beige pants:ochre socks:coral )
+```
+The order of the data in **records** doesn't matter. You can do stuff like this:
+```
+{Browse R.shirt		%use dot operator to access data}
+```
+
+######Tuples
+Tuples differ by records in that tuples are in a certain order:
+```
+T = state(1 a 2)
+```
+I *think* it's like an array where you don't have to allocate memory, and it can contain different data types. Accessing data in tuples with the dot operator is done like this: `T.1` returns 1, `T.2` returns a. <span style="color:red;">WARNING</span>: You start counting from *1* when dealing with tuples (not zero!!!).
+
+There's a really good example of a binary tree implementation in the lecture notes, go check that out.
+
+######Lists
+These are so common they get their own special syntax:
+```
+L = john|paul|george|ringo|nil
+% or you can do
+L = [john paul george ringo nil]
+% or even do thisL]
+L = john|(paul|(george|(ringo|nil))) % this is more like a tree than a linked list
+```
+
+The first element is accessed by doing `L.1`, the rest is `L.2`. The `|` operator is used to *partition* lists (seperate list into two lists).
+
+#######Matrices
+Like any other language, make a list of lists:
+```
+M = [ [1 2] [3 4] [5 6] ]
+```
+
+######Pattern Matching
+Pattern matching takes apart a data structure by matching it against a corresponding shape. Here's an example of a function:
+```
+fun {SumList L}
+	case L
+	of nil then 0
+	[] H|T then H + {SumList T} %call recursively, since you can only differentiate between H and T
+	end
+end
+```
+Basically, you go through the list, partition the list, then add the head to the "tail" (which is always the second element in the list). Sabbah is saying this is *so cohesive* (I dunno if I agree).
+
+The true magic of recursion, is apparently, **transparency**. I think Sabbah's trying to highlight the fact that recursion forces your functions to be deterministic, and forces you write significantly smaller functions (since you just have a base case and then some logic in most cases). "If someone comes to me and says 'I hate recursion', I will take that guy and throw him outside immediately". - Sabbah Mohammed.
+
+Don't forget that your functions should be tail recursive so you don't absolutely annihilate your system's memory, since non tail recursion is inherently memory hungry. This sparked a lot of debate among the masters students.
+
+####Tail Recursion
+Are you doing operations *after* you call your recursive function? Then that isn't tail recursion buddy!
+
+Check this out:
+```
+declare 
+fun {Fact N A}
+	if N==0 then A
+	else {Fact N-1 N*A}
+	end
+end
+``` 
+There's no operations happenign after your function calls! You can literally never overflow the stack, since there *isn't a motherfucking stack*. Oh hell yeah baby. For practice, try making other common recursive functions tail recursive, like Fibonacci or Pascal's Triangle.
