@@ -70,7 +70,7 @@ END
 - Data goes in tables
 - Stuff in tables has relationships between them
 
-For example, a relationship between an entity like a  car and an entity like a person is "drives" (person drives car). This was Allaire's wild example.
+For example, a relationship between an entity like a car and an entity like a person is "drives" (person drives car). This was Allaire's wild example.
 
 ######Cardinality
 This just means you can impose a limit on the amount of children a parent element has.
@@ -79,5 +79,10 @@ Lecture 4
 =========
 
 *Sep 14*
+
+Multivalued attributes can be represented as relationships. For example (Allaire actually said this), a `SKATEBOARD` entity has `2 TRUCKS`, `4 WHEELS`, etc. I wish Cody was here to die laughing at this like I did.
+
+######Timestamp
+A time value associated with a data value, usually indicating when an event occurred that affected the data value.
 
 
