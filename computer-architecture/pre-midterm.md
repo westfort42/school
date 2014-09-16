@@ -54,7 +54,7 @@ Start at 0011, go up from there.
 0000, 0111, 0110, 0101, 0100, 1011, etc. This one isn't so popular. You just Start at 0000, go to 0111, and basically count backwards from there.
 
 ######BCD
-BDC = **B**inary **C**oded **D**ecimal. This is just the one we're used to, nothing special here.
+BDC = Binary Coded Decimal. This is just the one we're used to, nothing special here.
 
 ######Gray Code
 This one is weird, but the point of it was to only change one bit at a time when incrementing. It's kind of genius, but we'll look at it later.
@@ -133,15 +133,15 @@ The basic logic operators are `AND`, `OR`, and `NOT`.
 
 ######Basic Truth Tables
 
-|AND (・)           |
-|------|------|-----|
+| AND (・)          |
+| ---- | ---- | --- |
 | 0    | 0    | 0   |
 | 0    | 1    | 0   |
 | 1    | 0    | 0   |
 | 1    | 1    | 1   |
 
-|OR (+)             |
-|------|------|-----|
+| OR (+)            |
+| ---- | ---- | --- |
 | 0    | 0    | 0   |
 | 0    | 1    | 1   |
 | 1    | 0    | 1   |
