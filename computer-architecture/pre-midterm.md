@@ -136,21 +136,15 @@ The basic logic operators are `AND`, `OR`, and `NOT`.
 |AND (・)           |
 |-------------------|
 |0    |0      |0    |
-|-------------------|
 |0    |1      |0    |
-|--------------------
 |1    |0      |0    |
-|--------------------
 |1    |1      |1    |
 
 |OR (+)             |
 |-------------------|
 |0    |0      |0    |
-|-------------------|
 |0    |1      |1    |
-|-------------------|
 |1    |0      |1    |
-|-------------------|
 |1    |1      |1    |
 
 *Our goal* is to design hardware that can perform any logical or mathematical operation, while trying to make the simplest possible equation (in the real world, smaller = cheaper and more environmentally friendly).
