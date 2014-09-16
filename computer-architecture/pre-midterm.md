@@ -102,6 +102,66 @@ This is the binary multiplication table:
 
 Binary multiplication is incredibly easy once you know the table. To mutiply two binary numbers, follow my stupid picture:
 
-<img src=""/>
+Lecture 3
+=========
 
+*Sep 16*
 
+Binary division:
+```
+101 / 1101101.101
+      101
+      00111
+        101
+         1001
+          101
+          100.1
+           10.1
+           10.00
+            1.01
+            1.000
+              101
+              111
+```
+This doesn't seem like it's going to be to important, since it wasn't covered last year or covered in any detail here. **Next Lecture, an assignment will be handed out and a quiz happen** (covering this chapter). So just review conversion and simple arithmetic.
+
+####Chapter 2
+
+#######Part 1: Gate Circuits and Boolean Equations
+
+The basic logic operators are `AND`, `OR`, and `NOT`. 
+
+######Basic Truth Tables
+---------------------
+|AND (・)           |
+---------------------
+|0    |0      |0    |
+---------------------
+|0    |1      |0    |
+---------------------
+|1    |0      |0    |
+---------------------
+|1    |1      |1    |
+---------------------
+
+---------------------
+|OR (+)             |
+---------------------
+|0    |0      |0    |
+---------------------
+|0    |1      |1    |
+---------------------
+|1    |0      |1    |
+---------------------
+|1    |1      |1    |
+---------------------
+
+*Our goal* is to design hardware that can perform any logical or mathematical operation, while trying to make the simplest possible equation (in the real world, smaller = cheaper and more environmentally friendly).
+
+######Logic Diagrams
+Here's `F = X + ¬YZ`
+
+<img src="img/ld.png />
+
+######Boolean Algebra
+There are *17* commonly used boolean formulas. Just add that image into this document.
