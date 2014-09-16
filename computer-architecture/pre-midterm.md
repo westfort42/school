@@ -133,14 +133,14 @@ The basic logic operators are `AND`, `OR`, and `NOT`.
 
 ######Basic Truth Tables
 
-| AND (・)          |
+| AND (・) |  |     |
 | ---- | ---- | --- |
 | 0    | 0    | 0   |
 | 0    | 1    | 0   |
 | 1    | 0    | 0   |
 | 1    | 1    | 1   |
 
-| OR (+)            |
+| OR (+) |    |     |
 | ---- | ---- | --- |
 | 0    | 0    | 0   |
 | 0    | 1    | 1   |
