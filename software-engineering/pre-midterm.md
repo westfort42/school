@@ -118,4 +118,12 @@ Lecture 3
 ######Central Use Case
 This is supposed to be the use case that is the most typical. It's basically the core of what the application does. The entire system needs to be built around this use case. Use cases help define the scope of the system, and help plan the development process accordingly. They also validate requirements (although its pretty weird if you have requirements without having a reason to use the app...). This also will help structure the user manual, and inspire the tests you'll write.
 
+####Requirements Documentation
+1. Problem
+2. Background Info
+3. Environment and system models
+4. Functional requirements
+5. Non-functional requirements
 
+######What Is A Requirement?
+Each requirements should outweight the cost of development, contribute to the solution of the current problem, be expressed using a clear and consistent notation, be unambiguous, be logically consistent, lead to a system of sufficient quality, be realistic within available resources, be verifiable, be uniquely identifiable, and should not over-constrain the design of the system.
