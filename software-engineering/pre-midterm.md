@@ -127,3 +127,8 @@ This is supposed to be the use case that is the most typical. It's basically the
 
 ######What Is A Requirement?
 Each requirements should outweight the cost of development, contribute to the solution of the current problem, be expressed using a clear and consistent notation, be unambiguous, be logically consistent, lead to a system of sufficient quality, be realistic within available resources, be verifiable, be uniquely identifiable, and should not over-constrain the design of the system.
+
+####Object-Oriented Software Engineering
+This means we get to use UMLs. The course also focuses on Java. So what is object orientation? I actually can't bring myself to write about it, it's already been talked about so much up until this point. You know what it is.
+
+At this point, you're probably going to want to invest in some UML building software or web tool cause this keeps coming up.

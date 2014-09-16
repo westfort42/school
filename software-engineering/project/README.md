@@ -34,4 +34,4 @@ Lakehead University Residence Management App
 ######Central Use Case
 This is supposed to be the use case that is the most typical. It's basically the core of what the application does. The entire system needs to be built around this use case.
 
-
+**The project needs to be programmed in an object oriented language**
