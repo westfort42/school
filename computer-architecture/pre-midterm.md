@@ -132,36 +132,33 @@ This doesn't seem like it's going to be to important, since it wasn't covered la
 The basic logic operators are `AND`, `OR`, and `NOT`. 
 
 ######Basic Truth Tables
----------------------
-|AND (・)           |
----------------------
-|0    |0      |0    |
----------------------
-|0    |1      |0    |
----------------------
-|1    |0      |0    |
----------------------
-|1    |1      |1    |
----------------------
 
----------------------
-|OR (+)             |
----------------------
+|AND (・)           |
+|-------------------|
 |0    |0      |0    |
----------------------
-|0    |1      |1    |
----------------------
-|1    |0      |1    |
----------------------
+|-------------------|
+|0    |1      |0    |
+|--------------------
+|1    |0      |0    |
+|--------------------
 |1    |1      |1    |
----------------------
+
+|OR (+)             |
+|-------------------|
+|0    |0      |0    |
+|-------------------|
+|0    |1      |1    |
+|-------------------|
+|1    |0      |1    |
+|-------------------|
+|1    |1      |1    |
 
 *Our goal* is to design hardware that can perform any logical or mathematical operation, while trying to make the simplest possible equation (in the real world, smaller = cheaper and more environmentally friendly).
 
 ######Logic Diagrams
 Here's `F = X + ¬YZ`
 
-<img src="img/ld.png />
+<img src="img/ld.png" />
 
 ######Boolean Algebra
 There are *17* commonly used boolean formulas. Just add that image into this document.

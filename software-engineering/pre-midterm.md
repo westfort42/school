@@ -110,4 +110,12 @@ Types of requirements:
 
 If you don't understand any of this, try looking at the README for any succesful open source project.
 
+Lecture 3
+=========
+
+*Sep 16*
+
+######Central Use Case
+This is supposed to be the use case that is the most typical. It's basically the core of what the application does. The entire system needs to be built around this use case. Use cases help define the scope of the system, and help plan the development process accordingly. They also validate requirements (although its pretty weird if you have requirements without having a reason to use the app...). This also will help structure the user manual, and inspire the tests you'll write.
+
 
