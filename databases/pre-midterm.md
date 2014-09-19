@@ -78,11 +78,39 @@ This just means you can impose a limit on the amount of children a parent elemen
 Lecture 4
 =========
 
-*Sep 14*
+*Sep 15*
 
 Multivalued attributes can be represented as relationships. For example (Allaire actually said this), a `SKATEBOARD` entity has `2 TRUCKS`, `4 WHEELS`, etc. I wish Cody was here to die laughing at this like I did.
 
 ######Timestamp
 A time value associated with a data value, usually indicating when an event occurred that affected the data value.
+
+Lecture 5
+=========
+
+*Sep 17*
+
+I didn't come to this one (running LU Club Days Comp Sci table).
+
+Lecture 6
+=========
+
+*Sep 19*
+
+####Chapter 3: The Enhanced E-R Model
+
+So now, we've got the following relationships:
+
+```
+1 to 1
+1 to Many
+Many to Many
+```
+
+Great. Relationships can also be **mandatory** or **optional**. There is a way to style this is UML diagrams (just Google this).
+
+####Chapter 4: Logical Database Design and the Relational Model
+
+Relational databases concentrate on the *to-one* side of things (like one-to-one or many-to-one). This is how relationships are implemented in relational databases. This whole lecture basically just covers how data models and E-R diagrams work. Just spend five minutes Googling this and you'll be okay.
 
 
