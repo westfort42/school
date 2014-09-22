@@ -183,4 +183,58 @@ fun {Fact N A}
 	end
 end
 ``` 
-There's no operations happenign after your function calls! You can literally never overflow the stack, since there *isn't a motherfucking stack*. Oh hell yeah baby. For practice, try making other common recursive functions tail recursive, like Fibonacci or Pascal's Triangle.
+There's no operations happening after your function calls! You can literally never overflow the stack, since there *isn't a motherfucking stack*. Oh hell yeah baby. For practice, try making other common recursive functions tail recursive, like Fibonacci or Pascal's Triangle.
+
+####Lecture 5
+
+*Sep 22* (I wasn't there for Lecture 4).
+
+Apparently last time we covered some basic data sturctures. It should be available in the course notes.
+
+######Declarative Concurrency
+
+Concurrent Programs: several activities happen at the same time. There are two main concurrency models:
+- Multithreaded Model (think Erlang)
+- Event-Driven Model (think Node.js)
+
+In multithreading, each process executes in a diffrent thread of control. Multithreaded programs are usually synchronous. In event-driven models, processes execute in an event loop. It's usually async.
+
+**In OZ**, we use multithreading! There is declarative concurrency (deterministic & stateless), and advanced concurrency via streams and cell variables (this is stateful). The best thing in OZ is called "laziness". More on this soon.
+
+######Laziness
+
+A type of evaluation that enables dealing with infinite data structures. Defines control flow as abstraction instead of primitives.
+
+Example:
+
+```
+B = {F1 Y}
+C = {F2 Y}
+A = B + C
+```
+
+B and C *are only* evaluated if needed by A.
+
+Basically, all operations are suspended until its results are needed. This differs from data-driven execution, where the results will be computed before they're needed by the operation. This is sometimes called "evaluation by demand".
+
+You can define something as being lazy by using the `lazy` keyword that OZ provides. You can also run different threads by prefixing a function call with `thread`, for example:
+```
+thread Xs = {Ints 1 10} end
+```
+
+Sabbah keeps mentioning "infinite data structures". This is exactly what it sounds like: your data structure can go on forever (or until all your RAM holes are all filled up).
+
+There are a bunch of good examples that show there differences between regular execution, multithreading, laziness, and stuff like that in the lecture notes.
+
+######Conditions for Declarative Concurrency
+**No race conditions**! That means no observable non-determinism among threads. The result of a program *must* be the same whether it is concurrent or not.
+
+Fun fact: with OZ you can have up to 100 000 active threads on a standard PC.
+
+######Synchronizing Multiple Threads
+
+You can do this with **data flow variables**. Data flow variables are *blocking* (they stop the execution for a certain amount of time). This allows top-level stuff to continue, while the thread is basically waiting. We'll talk more about this stuff next lecture since it's relatively dense.
+
+Like any programming centered course, all this becomes way more apparent when you write and run some code. Just mess around with the examples, and you'll be on your way.
+
+
