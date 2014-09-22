@@ -76,3 +76,57 @@ These are just some things I think the application should do:
  
 ######Process
 -  We'll just make it
+
+##Instructions for Getting Your Dev Environment Setup
+Hey guys,
+
+######1. Get a GitHub account
+
+Go (https://www.github.com)[GitHub] and sign up for an account. You'll also need
+to install Git on your computer, which I THINK happens when you sign
+up for GitHub and download the GitHub desktop software. There are also
+instructions on GutHub's website.
+
+Find (https://github.com/bentranter/school/tree/master/software-engineering/project)[the project here]
+and bookmark that, since that's where the project will reside. After
+that, click the "Fork" button in the top right of the screen. This
+will copy the entire project to a repository in your own GitHub
+account, which you can then clone and work on locally. To do this,
+download the GitHub desktop software (https://windows.github.com/)[Windows],
+then go back to your own repository, and click "Clone in Desktop".
+This downloads the files as lets you start working on them.
+
+Also, don't bother going further than this until Wednesday, because I
+still need to set the project up haha.
+
+######2. Install Node.js
+
+Go to the site and follow the instructions, its pretty simple
+(http://nodejs.org/)[Node.js site].
+
+######3. Install CouchDB
+
+Same deal, just go to the site and download (http://couchdb.apache.org/)[CouchDB].
+
+######4. Install Hood.ie
+
+I've never done this on Windows before, but I think it's pretty easy.
+If it doesn't work, I can try to help you figure it out once I get it
+setup on Windows myself. As far as I know, open the Windows command
+prompt thing, and then type:
+
+npm install -g hoodie-cli
+
+There are more instructions on their website.
+
+######5. Start the app
+
+Open the command prompt again, and navigate to where the folder that
+contains the project is. On Windows, you type 'dir' to list all your
+folders, and then 'cd' and the folder name to go into one. Once you're
+there, type 'hoodie start'. You should be good to go! Your browser
+should open automatically.
+
+##Week 3: Requirement Document
+
+
