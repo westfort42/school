@@ -82,7 +82,7 @@ Hey guys,
 
 ######1. Get a GitHub account
 
-Go (https://www.github.com)[GitHub] and sign up for an account. You'll also need
+Go [https://www.github.com](GitHub) and sign up for an account. You'll also need
 to install Git on your computer, which I THINK happens when you sign
 up for GitHub and download the GitHub desktop software. There are also
 instructions on GutHub's website.
