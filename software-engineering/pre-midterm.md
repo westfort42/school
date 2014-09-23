@@ -141,10 +141,60 @@ Lecture 5
 In lecture 4 which I wasn't around for, we just reviewed UMLs and how Java handles object orientation. Let's review more:
 
 ######Access Control
-
 - `public` any class can access
 - `protected` only code in the package or subclasses can access
 - (blank) only code in the package can access
 - `private` only code written in the class can access, inheritance still occurs though (obviously)
+
+######Threads and Concurrency
+This is the sequence of executing statements that can be runing concurrently with other threads. To create a thread in Java,
+- create a class implementing `Runnable` or extending `Thread`
+- implement the `run` method as a loop that does something for a period of time
+- create an instance of this class
+- invoke the `start` operation, which calls `run`
+
+######Programming Style Guidelines
+- remember programs are *for people to read*
+- always choose the simpler alternative
+- reject clever code that is hard to understand **(read this with some skepticism)**
+- shorter code is not necessarily better
+- choose good names
+    - make them descriptive
+    - don't worry if they're long, that's fine
+- comment whatever is non-obvious
+- do not comment the obvious (debatable)
+- comments should be about 25-50% of the code
+- organize class elements consistently:
+    - variables, constructors, public methods, followed by private methods
+- be consistent regarding layout of code (whitespace, indentation, etc)
+- **avoid duplication of code**!!!!!
+    - reuse it whenever you possibly can
+    - extend things, create new methods if necessary, just make it nice and modular and extendable and everything good (read the source for (Telescope)[http://telesc.pe) because Sascha Greif's code is insanely good)
+- adhere to the "is a" rule
+- prefer private as opposed to public
+- do not mix UI code with non UI code!
+    - this makes non UI code more reusable
+- this wasn't in the slides, but this is an obvious one: if something looks like it might throw an exception, handle it!!
+
+######UML Diagrams
+- class diagrams
+    - describe classes and their relationships
+- interaction diagrams
+    - show behaviour of systems in terms of how objects interact with each other
+- state diagrams
+    - show how systems behave internally
+- component and deployment diagrams
+    - show how the various compnents of systems are arranged logically and physically
+
+######What Makes A Good Model?
+
+A model should:
+- use a standard notation
+- be understandable by clients and users
+- lead software engineers to have insights about the system
+- provide abstraction
+- help create diagrams
+- permit analysis and review of those designs
+- contain documentation
 
 

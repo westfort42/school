@@ -126,6 +126,17 @@ folders, and then 'cd' and the folder name to go into one. Once you're
 there, type 'hoodie start'. You should be good to go! Your browser
 should open automatically.
 
+######If It Didn't Work...
+
+1. Make sure you have **everything installed**. Review: git, Node, NPM, CouchDB, Hoodie
+2. It didn't work for me until I updated NPM to v2.0.0. Make sure NPM is up to date by being lazy and just running:
+```bash
+$ npm install npm
+```
+3. I think `hoodie new <projectname>` on Windows used to fail because it tried to call `mkdir` which isn't a Windows command. Update Hoodie and this should work fine.
+
+4. By deafult, this runs on port http://127.0.0.1:6001/, although your browser should open automatically.
+
 ##Week 3: Requirement Document
 
 
