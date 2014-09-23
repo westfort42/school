@@ -132,3 +132,19 @@ Each requirements should outweight the cost of development, contribute to the so
 This means we get to use UMLs. The course also focuses on Java. So what is object orientation? I actually can't bring myself to write about it, it's already been talked about so much up until this point. You know what it is.
 
 At this point, you're probably going to want to invest in some UML building software or web tool cause this keeps coming up.
+
+Lecture 5
+=========
+
+*Sep 23*
+
+In lecture 4 which I wasn't around for, we just reviewed UMLs and how Java handles object orientation. Let's review more:
+
+######Access Control
+
+- `public` any class can access
+- `protected` only code in the package or subclasses can access
+- (blank) only code in the package can access
+- `private` only code written in the class can access, inheritance still occurs though (obviously)
+
+

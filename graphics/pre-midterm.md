@@ -45,3 +45,40 @@ A scene is made up of three things: an object, a viewer, and a light source. The
 
 ######Human Visual System
 Only red, green, and blue gets sent to the brain, and the brain sorts out the rest. In graphics, we use additive colour (RGBA) instead of shitty subtractive colour (CMYK).
+
+Lecture 5
+=========
+
+*Sep 23*
+
+Today we're talking about how to deal with the camera. The math library that's included with the textbook has a `lookAt' function that we can use to make things easier. 
+
+######Lights and Materials
+
+- Types of light: point sources and distributed sources.  Point sources are easier because they have a basic geometry, whereas distributed sources have very complicated geometry.
+- Sources: Near and far. The further the light is, the easier it is to deal with it's geometry.
+- Materials: dull stuff, shiny stuff, etc. Basically different materials handle light differently.
+
+######WebGL
+
+WebGL is actually a javascript implementation of ES2.0 (Open GL ES 2.0, ECMA 2). Also, JavaScript has the good old event loop everyone has come to love. OpenGL isn't object oriented whatsoever, but here is an example of a function in WebGl:
+```javascript
+gl.clear(gl.COLOR_BUFFER_BIT);
+```
+
+This differs from C, where it would've looked something more like:
+```C
+gl_clear(GL_COLOR_BUFFER_BIT);
+```
+
+######What is GLSL?
+Is the language for the shaders. It is C-like, but can handle overloaded operators and has C++-like constructors. WebGL functions compile, link, and get informartion to the shaders.
+
+**Dr Benson had a problem with using an external HTML file for the shaders. I guess you can't include a second HTML file within another HTML file using normal HTML, you'd need to use some sort of templating framework or use JavaScript to load it in via an AJAX request (and you'd need to run a basic WebServer).
+
+######Some Notes
+Just use the `onLoad` function for everything (like `<body onload='init();'>` or something similar) in this course. Also, use the canvas element with the three dimensional rendering context (even for the two dimensional assignment). There are more notes for this section in the slides on the webpage.
+
+Another thing to remember is that once you've got your boilerplate code in place, you never have to mess with it again. Do it once and you're good to go! The math library contains a *ton* of matrix transformations, which is nice because now you don't have to worry about them.
+
+
