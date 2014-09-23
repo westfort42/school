@@ -212,4 +212,4 @@ If you wanted the **Product of Maxterms** (which would've been denoted `F1 = (M2
 
 Finding the SOM and POM is basically the opposite of what we learned last week. This is expansion, instead of simplification.
 
-Why would anyone even want to find the SOM or POM? This is the *short form* of a function (since it's expressed easily). This encourgaes modularity and reusability in logic design.
+Why would anyone even want to find the SOM or POM? This is the *short form* of a function (since it's expressed easily). This encourgaes modularity and reusability in logic design. It's kind of like how a function works in programming.
