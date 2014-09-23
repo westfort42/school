@@ -156,3 +156,60 @@ Here's `F = X + ¬YZ`
 
 ######Boolean Algebra
 There are *17* commonly used boolean formulas. Just add that image into this document.
+
+Lecture 5
+=========
+
+Example:
+```
+ACD' + C'D' + (A'C')'
+= D'(AC + C') + A + C
+= D'((A + C')(C + C')) + A + C
+= AD' + C'D' + A + C
+= A(1 + D') + (C + C')(C + D')
+= A + C + D'
+```
+
+This was a question on a quiz. These questions are pretty easy *if* you know all the laws that make simplification easier (like DeMorgan's Law, etc).
+
+####Canonical Forms
+This is the part of the unit where we learn about minterms and maxterms, sum-of-minterms representations, product-of-maxterm representations, representation of complements of functions, and conversions between representations.
+
+######Maxterms/Minterms
+I don't know how to explain this without just showing an example:
+
+| A    | B    | C   | Minterms     | Maxterms   |
+| ---- | ---- | --- | ------------ | ---------- |
+| 0    | 0    | 0   | (A')(B')(C') | A + B + C  |
+| 0    | 0    | 1   | (A')(B')(C)  | A + B + C' |
+| 0    | 1    | 0   | (A')(B)(C)'  | A + B' + C |
+
+Maxterms are **OR** terms with every variable in **true** or complemented form.
+Minterms are **AND** terms with every variable in **false** or complemented form.
+
+How would you represent minterms number 4? (m<sub>6</sub>)
+
+Well, the sixth row of the truth table for XYZ would be,
+| X    | Y    | Z   |
+| ---- | ---- | --- |
+| 0    | 0    | 0   |
+| 0    | 0    | 1   |
+| 0    | 1    | 0   |
+| 0    | 1    | 1   |
+(etc)
+
+It would be equal to (A')(B)(C) *(minterm)* or A + B' + C' *(maxterm)*. As you might've just realized. The relationship between minterms and maxterms is just DeMorgan's Law.
+
+At this point, there are a ton of tables in the slides, so you'd be better off referring to those.
+
+######Minterm Function Example
+Find `F1 = m1 + m4 + m7`:
+
+`F = X'Y'Z + XY'Z' + XYZ`
+
+If you wanted the **Product of Maxterms** (which would've been denoted `F1 = (M2)(M3)(M5)(M6)`), it would just be:
+`F = (X + Y' + Z)(X' + Y + Z)(X' + Y' + Z)(X' + Y + Z')(X' + Y' + Z )`
+
+Finding the SOM and POM is basically the opposite of what we learned last week. This is expansion, instead of simplification.
+
+Why would anyone even want to find the SOM or POM? This is the *short form* of a function (since it's expressed easily). This encourgaes modularity and reusability in logic design.
