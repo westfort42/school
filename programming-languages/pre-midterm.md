@@ -237,4 +237,43 @@ You can do this with **data flow variables**. Data flow variables are *blocking*
 
 Like any programming centered course, all this becomes way more apparent when you write and run some code. Just mess around with the examples, and you'll be on your way.
 
+Lecture 6
+=========
 
+*Sep 24*
+
+There is no *thread overlapping* in OZ. To control interleaving, is OZ we use streams. A **stream** is a list which has its tail unbound. It can be a list of anything, and it grows dynamically. We will have a lecture on stream programming coming up soon, so don't worry about it too much now.
+
+This is an example that used streams, but the Browse statement is still needed.
+```
+declare
+fun {Count N}
+	fun {Help I}
+	if I==N
+		then N|nil
+	else I|Help{I + 1}
+	end
+end
+in 
+	{Help 1}
+end
+```
+
+######Cell Variables
+A *cell* is a basic unit of encapsulated state.
+
+#Functional Proggramming
+######(In Racket)
+
+At this point, we'll begin studying **functional** programming. For this, we're going to use Racket, which is a purely functional language. Right now, Sabbah is talking about a school called Imperial College, where the chair only mandated that the only type of programming language used throughout the entire degree program was functional (and it was apparently O'Caml). I guess this is the good shit.
+
+Functional languages are called "reduction machines". It's also time now for... 
+
+######Lambda Calculus
+Functional thinking and programming is on the rise (see: Scala, Clojure, Erlang, Scheme, Haskell (lol)). If you only know how to use Java at this point, fuck you.
+
+Functional programming is also declarative, however, declarative programming encapsulates a bunch of different types of programming. HTML is declarative, but it is definitely not functional. 
+
+In functional programming, **all functions are anonymous**. Next lecture we'll talk about lambda expressions in more detail.
+
+ 
