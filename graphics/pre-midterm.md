@@ -81,4 +81,29 @@ Just use the `onLoad` function for everything (like `<body onload='init();'>` or
 
 Another thing to remember is that once you've got your boilerplate code in place, you never have to mess with it again. Do it once and you're good to go! The math library contains a *ton* of matrix transformations, which is nice because now you don't have to worry about them.
 
+Lecture 6
+=========
 
+*Sep 25*
+
+Fragment Shaders vs Vertex Shaders: which one gives a better effect? -- It's fragment shading. Fragment shading used to be only possible if you were fiddling around with assembly language, but now OpenGL and DirectX can use fragment shading. 
+
+######WebGL Primitives
+```javascript
+GL_POINTS
+GL_LINES
+GL_LINE_STRIP
+GL_LINE_LOOP
+GL_TRIANGLE_STRIP
+GL_TRIANGLES
+GL_TRIANGLE_FAN
+```
+
+Basically, WebGL will *only display* triangles.
+
+**IF YOU'VE STARTED TO GET WEIRD ERRORS**. I *think* that some of the files are loaded via a local AJAX request, which doesn't work if you're working with static files in Chrome. Instead, either use Brackets as your text editor (by Adobe) which launches a server when you preview your document, or open up your console and do this:
+```bash
+$ cd /project # or wherever your project is
+$ ls # check to see if index.html and all the files are in the directory
+$ python -m SimpleHTTPServer
+```

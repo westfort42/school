@@ -288,4 +288,14 @@ F = a'b'c' + a'bc' + a'bc
 ```
 Dr El-Ocla says: **these are very important**. The difficulty of the examples here are the same as they will be on an exam.
 
+####Chapter 2 Part 2: Circuit Optimization
+Our goal now is to  obtain the simplest implementation for a given function. With the method we've been using until now, it's very hard to know if we've found the optimal method.
 
+######Literal & Gate Inuput Cost
+The **literal cost** is the *total number of variables* in a function. For example,
+```
+F = bd + ab'c + acd'  // L = 8
+```
+The **gate input cost** is the *total number of `AND`s or `OR`s in the function. We also sometimes count the `NOT` gates as well:
+```
+F = bd + ab'c + acd'
