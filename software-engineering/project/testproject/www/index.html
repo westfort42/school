@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>testtest</title>
+    <title>Residence Management App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>testtest</h1>
+    <div class="header-color">
+      <div class="container">
+        <div class="row">
+        <h1>LU Residence Management</h1>
         <p>
-          hoodie playground.
+          A web application for managing the residences at Lakehead University.
         </p>
 
         <div class="hoodie-accountbar">
@@ -66,50 +67,28 @@
           </div><!-- /.hoodie-account-error -->
         </div><!--/hoodieAccountBar -->
       </div>
+    </div>
+  </div>
+  <div class="container">
+      
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <h4>Add an item to your to-do list</h4>
+            <input type="text" class="input-lg" id="todoinput"  placeholder="New To-Do ↵" />
+          </div>
+          <div class="col-sm-6">
+            <ul class="todo" id="todolist"></ul>
+          </div>
+        </div>
 
-      <div class="content">
-        <ul id="todolist"></ul>
-
-        <input type="text" id="todoinput"  placeholder="new todo ↵" />
+        <div class="col-sm-6">
+          <h4>Some basic residence info...</h4>
+        </div>
       </div>
 
-      <div class="code">
-<pre class="language-javascript"><code class="language-javascript">
-// initialize Hoodie
-var hoodie  = new Hoodie()
-
-// initial load of all todo items from the store
-hoodie.store.findAll('todo').then( function(todos) {
-  todos.sort( sortByCreatedAt ).forEach( addTodo )
-})
-
-// when a new todo gets stored, add it to the UI
-hoodie.store.on('add:todo', addTodo)
-// when a user signs out, clear the todo list
-hoodie.account.on('signout', clearTodos)
-
-// handle creating a new task
-$('#todoinput').on('keypress', function(event) {
-  if (event.keyCode == 13) { // ENTER
-    hoodie.store.add('todo', {title: event.target.value});
-    event.target.value = '';
-  }
-})
-
-function addTodo( todo ) {
-  $('#todolist').append('&lt;li&gt;'+todo.title+'&lt;/li&gt;');
-}
-function clearTodos() {
-  $('#todolist').html('');
-}
-function sortByCreatedAt(a, b) {
-  return a.createdAt &gt; b.createdAt
-}
-</code></pre>
-      </div><!-- /.code -->
-
       <footer class="copy">
-        <p>&hearts; hood.ie 2014</p>
+        <p>&hearts; Ben, Andrew, Allan, Derek, Issac 2014</p>
       </footer>
     </div> <!-- /.container -->
 
