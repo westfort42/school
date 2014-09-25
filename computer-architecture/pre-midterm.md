@@ -213,3 +213,79 @@ If you wanted the **Product of Maxterms** (which would've been denoted `F1 = (M2
 Finding the SOM and POM is basically the opposite of what we learned last week. This is expansion, instead of simplification.
 
 Why would anyone even want to find the SOM or POM? This is the *short form* of a function (since it's expressed easily). This encourgaes modularity and reusability in logic design. It's kind of like how a function works in programming.
+
+Lecture 6
+=========
+
+*Sep 25*
+
+Any Boolean function can be expressed as a Sum of Minterms. Example: Implement `f(x, y) = x + xy` as a Sum of Minterms:
+```
+  x + xy
+= x(y + y')
+= xy + xy' + x'y
+= m1 + m2  + m3
+```
+
+Remember that any function can be represented both ways: as a Sum of Minterms *or* a Product of Maxterms. Here's another example of a Sum of Minterms function(just remember that `(x + x') = 1` so you can pretty much throw that where you need it:
+```
+f = a + b'c
+  = a(b + b')(c + c') + (a+a')b'c
+  = abc + abc' + ab'c + ab'c' + ab'c + ab'c
+// If you have redundant terms, you can just remove the duplicates, and it will not affect the value
+  = m1 + m4 + m5 + m6 + m7
+```
+
+Let's try to express something as a Product of Maxterms. Instead of re-doing the previous example, let's do a different example. For this example, we will be obtaining the **complement of the function**. How do you this? You just apply *DeMorgan's Theorem* (remember?)
+```
+F = (1,3,4,7)
+// The complement would be:
+F = (0,2,5,6)
+```
+
+What is `F = (1,3,4,7)` as a product of maxterms?: It's just `(x + y + z')(x + y' + z')(x' + y + z)(x' + y' + z')`. This good because if you know the product of maxterms or the sum of minterms for some function, it's easy to get the other one by finding the complement.
+
+The formal notation for the SOM is `∑m`, and the formal notation for the POM is `∏M` (that was supposed to be the Pi symbol).
+
+Last Example: Represent `f = (a + b'c)(ab' + c)` as SOM and POM:
+
+**Do POM first since it can be done in fewer steps**
+```
+f = (a + b'c)(ab' + c') // Factor out the term (a + c)
+  = (a + b)(a + c)(a + c)(a' + c)
+  = (a + b' + c)(a + b' + c')(a + b' + c)(a + b + c')(a + b' + c)(a' + b' + c)
+  = (0   1    0)(0   1    1 )(0   1    0)(0   0   0 )(0   1    0)(1    1    0)
+  = M(0, 2, 3, 6)
+```
+Now the SOM is just `m(1, 4, 5, 7)`.
+
+######Standard Form
+The standard form when a function is either expressed as a *sum of products* or a *product of sums*. For example,
+```
+SOP: abc + a'b'c + b
+POS: (a+b)(a+b'+c')(c)
+```
+How is this different that the canonical form? Well, in the standard form you don't need to have all the terms in each group of terms.
+
+Example: Simplify this canonical form into the standard form:
+```
+F = a'b'c + ab'c' + ab'c + abc' + abc
+// Do some factoring of common terms
+  = a'b'c + a(b'c' + b'c + bc' + bc)
+  = a'b'c + a(b' + b)
+  = a'b'c + a
+  = a + b'c
+```
+Now we have the SOP. What if we want the POS?
+```
+// Start witht the complement:
+F = a'b'c' + a'bc' + a'bc
+  = a'b'c' + a'b
+  = a'(b'c' + b')
+  = a'b + a'c'
+// Then complement again using DeMorgan's Theorem
+  = (a + b')(a + c)
+```
+Dr El-Ocla says: **these are very important**. The difficulty of the examples here are the same as they will be on an exam.
+
+
