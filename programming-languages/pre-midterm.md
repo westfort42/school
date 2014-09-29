@@ -276,4 +276,51 @@ Functional programming is also declarative, however, declarative programming enc
 
 In functional programming, **all functions are anonymous**. Next lecture we'll talk about lambda expressions in more detail.
 
- 
+Lecture 7
+=========
+
+*Sep 29*
+
+####Functional Programming with OZ
+
+Alright whatever let's get right into Lambda calculus. We're going to compose problems as functions. We don't care about control flow or anything like that anymore.
+
+Lamba Calculus is about *lambda functions*. **Every function we're going to write will be anonymous**. In lambda calculs, all functions must take a single paramter. If you have two parameters, you're gonna need two functions. What does that mean for a basic function, like `f(x) = 2*X`?
+
+```
+
+```
+
+The basic logic for lambda calculus is *reductionism*. You keep reducing until you get a *normal* value. In math, everything is infixed. Here, everything is prefixed. 
+
+######Single Argument Representation
+The function `x - y` is represented as `lambda(x).lambda(y).(x - y)`. That means that each function takes one argument.
+
+######Rules of Reduction
+**Recursion is not allowed**. This limits the expressiveness of the language. However, we can define a function inside lambda calculus called the Y-Combinator that basically allows recursion.
+
+Alpha reduction: changing the name of a bound variable
+Substitution: If a variable appears free in the expression, we can perform a substitution.
+Beta reduction: Function application
+Eta-reduction: Reduces 'redundant' functions.
+
+######Some real examples in OZ
+
+Example: function that finds the square of a number.
+```
+declare Square = fun{$ X} X * X
+end
+
+{Browse {Square 6}}
+```
+
+Incrementing using eta-reduction
+```
+declare Increment = fun{$ X} X + 1 end
+{Browse {Increment 5}}
+
+declare Inc = fun{$ X} {Increment X} end
+{Browse {Inc 6}}
+```
+
+

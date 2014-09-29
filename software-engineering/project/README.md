@@ -139,4 +139,20 @@ $ npm install npm
 
 ##Week 3: Requirement Document
 
+##Week 4: Potential Features/Uses/Other Stuff
 
+######Ideas
+- Mobile First Design
+- MVC Design Pattern:
+
+######Models
+- Residence Data
+- User Accounts
+    - Basic users
+    - Admins
+
+######Views
+- Browse
+- Menu
+- Sign/Sign Out
+- List

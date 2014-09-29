@@ -113,4 +113,11 @@ Great. Relationships can also be **mandatory** or **optional**. There is a way t
 
 Relational databases concentrate on the *to-one* side of things (like one-to-one or many-to-one). This is how relationships are implemented in relational databases. This whole lecture basically just covers how data models and E-R diagrams work. Just spend five minutes Googling this and you'll be okay.
 
+Lecture 9???
+============
+
+*Sep 26*
+
+We started Chpater 5.
+
 
