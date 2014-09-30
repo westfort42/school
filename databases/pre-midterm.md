@@ -120,4 +120,13 @@ Lecture 9???
 
 We started Chpater 5.
 
+Lecture 13
+==========
+
+##SQL
+
+######Hell yeah
+
+SQL **(structured query language)** is something I can use of my Mac, which I'm with for sure. SQL was developed by Oracle, and made them *so much money you wouldn't believe it*. Development started in the 70s and rages on today. I actually think some SQL DBs speak JSON and listen to HTTP now, which is crazy.
+
 
