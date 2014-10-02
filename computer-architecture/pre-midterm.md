@@ -336,9 +336,37 @@ x = 1 xy'  xy
 
 | K - Map | y = 0 | y = 1 |
 | ---- | ---- | --- |
-| 0    | 0    | 0   |
-| 0    | 0    | 1   |
-| 0    | 1    | 0   |
-| 0    | 1    | 1   |
+| x = 0 | m0  | m1 |
+| x = 1 | m3  | m2 |
+
+
+Lecture 8
+=========
+
+*Oct 2*
+
+Three variable K-Map
+
+| K-Map | yz = 00 | yz = 01 | yz = 11 | yz = 10 |
+| ----- | ------- | ------- | ------- | ------- |
+| x = 0 | m0      | m1      | m3      | m2      |
+| x = 1 | m4      | m5      | m7      | m6      |
+
+**K - Maps are only applicable with minterms!!**
+
+| Truth table | x  | y  | z  |
+| -- | -- | -- | -- |
+| m0 | 0  | 0  | 0  |
+| m1 | 0  | 0  | 1  |
+| m2 | 0  | 1  | 0  |
+| m3 | 0  | 1  | 1  |
+| m4 | 1  | 0  | 0  |
+| m5 | 1  | 0  | 1  |
+| m6 | 1  | 1  | 0  |
+| m7 | 1  | 1  | 1  |
+
+Reduction in truth tables: you group together numbers that only have *one* bit change between them, ie m3 and m2 have *one* bit change between them (010) and (011), m3 and m5 have *two* bit changes between them (011) and (101).
+
+######In an exam, you may be asked to use Boolean algabra to reduce, or you may be asked to use K - Maps. If it is not specified, you may use whatever method you prefer.
 
 
