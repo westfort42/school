@@ -107,3 +107,31 @@ $ cd /project # or wherever your project is
 $ ls # check to see if index.html and all the files are in the directory
 $ python -m SimpleHTTPServer
 ```
+
+Lecture 7
+=========
+
+*Sep 30*
+
+Is stuff showing up weird? Triangles are drawn in the order you specify them in the program. If you render some triangles in front of other triangles, you might not get the correct 3D effect. There is a Z buffer whicih takes distance information from the camera, and this handles the hiding of elements based on the Z (or depth) buffer.  
+
+######Animation and Interaction
+
+This the last bunch of info we need to get the project up and running. This is what will allow us to draw animations, trigger animations, and handle collisions.
+
+This is also available on D2L, but you could do something like this to animate a disc spinning:
+
+```javascript
+for (var theta = 0.0; theta < thetaMax; theta += dtheta) {
+	vertices[0] = vec2(Math.sin(theta), Math.cos(theta));
+	// Keep doing this for vertices 1, 2, and 3
+	render();
+}
+```
+
+That's not actually too good, because you js controlling the loop, and you keep calling re-render. This doesn't allow you to use the full parallel capabilities of the graphics card. What should you do instead? **RECURSION**. See the recursion example on D2L.
+
+
+*Double Buffering:* prevents display of partial rendering. Always display front-buffer, render into back buffer, swap buffers when necessary.
+
+

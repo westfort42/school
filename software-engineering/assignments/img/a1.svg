@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="475px" height="170px" viewBox="0 0 475 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <circle id="Oval-1" stroke="#979797" fill="#D8D8D8" sketch:type="MSShapeGroup" cx="144" cy="41" r="25"></circle>
+        <path d="M143.5,66.5 L143.5,114.5" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M143.5,115 L128.5,140.980762" id="Line-2" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M158.5,115 L143.5,140.980762" id="Line-3" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(151.000000, 127.990381) scale(-1, 1) translate(-151.000000, -127.990381) "></path>
+        <circle id="Oval-2" stroke="#979797" fill="#D8D8D8" sketch:type="MSShapeGroup" cx="336" cy="40" r="25"></circle>
+        <path d="M335.5,65.5 L335.5,113.5" id="Line-6" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M335.5,114 L320.5,139.980762" id="Line-5" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M350.5,114 L335.5,139.980762" id="Line-4" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup" transform="translate(343.000000, 126.990381) scale(-1, 1) translate(-343.000000, -126.990381) "></path>
+        <text id="Librarian" sketch:type="MSTextLayer" font-family="Open Sans" font-size="11" font-weight="bold" fill="#333333">
+            <tspan x="118" y="161">Librarian</tspan>
+        </text>
+        <text id="Library-User" sketch:type="MSTextLayer" font-family="Open Sans" font-size="11" font-weight="bold" fill="#333333">
+            <tspan x="302" y="161">Library User</tspan>
+        </text>
+        <text id="Change-contents" sketch:type="MSTextLayer" font-family="Open Sans" font-size="8" font-weight="normal" fill="#333333">
+            <tspan x="18" y="69">Change contents</tspan>
+            <tspan x="18" y="80"> of database</tspan>
+        </text>
+        <text id="Search" sketch:type="MSTextLayer" font-family="Open Sans" font-size="8" font-weight="normal" fill="#333333">
+            <tspan x="210" y="60">Search</tspan>
+        </text>
+        <text id="Sign-out-book" sketch:type="MSTextLayer" font-family="Open Sans" font-size="8" font-weight="normal" fill="#333333">
+            <tspan x="401" y="45">Sign out book</tspan>
+        </text>
+        <text id="Create-account" sketch:type="MSTextLayer" font-family="Open Sans" font-size="8" font-weight="normal" fill="#333333">
+            <tspan x="210" y="45">Create account</tspan>
+        </text>
+        <text id="Manipulate-" sketch:type="MSTextLayer" font-family="Open Sans" font-size="8" font-weight="normal" fill="#333333">
+            <tspan x="18" y="45">Manipulate </tspan>
+            <tspan x="18" y="56">accounts</tspan>
+        </text>
+        <path d="M86.5,48.5 L117.5,48.5" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M170.5,48.5 L201.5,48.5" id="Line-9" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M277.5,48.5 L308.5,48.5" id="Line-7" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M363.5,46.5 L394.5,46.5" id="Line-8" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <rect id="Rectangle-1" stroke="#979797" sketch:type="MSShapeGroup" x="203" y="33" width="74" height="33"></rect>
+        <rect id="Rectangle-2" stroke="#979797" sketch:type="MSShapeGroup" x="395" y="33" width="68" height="33"></rect>
+        <rect id="Rectangle-3" stroke="#979797" sketch:type="MSShapeGroup" x="13" y="33" width="74" height="56"></rect>
+    </g>
+</svg>

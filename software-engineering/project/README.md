@@ -156,3 +156,7 @@ $ npm install npm
 - Menu
 - Sign/Sign Out
 - List
+
+**Classes Used:** This is a problem in ours, since there are no such thing as classes in JavaScript (although it is object oriented, satisfying the requirement for the project). Could we do a summary of our MVC stuff? That basically goes hand in hand with stupid ole Agile methodology.
+
+

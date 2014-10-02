@@ -284,7 +284,7 @@ F = a'b'c' + a'bc' + a'bc
   = a'(b'c' + b')
   = a'b + a'c'
 // Then complement again using DeMorgan's Theorem
-  = (a + b')(a + c)
+  = ea + b')(a + c)
 ```
 Dr El-Ocla says: **these are very important**. The difficulty of the examples here are the same as they will be on an exam.
 
@@ -299,3 +299,46 @@ F = bd + ab'c + acd'  // L = 8
 The **gate input cost** is the *total number of `AND`s or `OR`s in the function. We also sometimes count the `NOT` gates as well:
 ```
 F = bd + ab'c + acd'
+
+Lecture 7
+=========
+
+*Sep 30*
+
+Recall: Gate Input Cost = # of literals + # of gates (gates are ANDs or ORs and sometimes NOTs).
+
+Today was just drawing gates. A better way to do learn this is to use some free web based software, punch in some expressions, and see what comes out.
+
+SOM and POM: Full DeMorgan's Law
+SOP and POS: **Do not complement operators**, only terms!!
+
+When you're converting a POS and SOP, you complement the terms, and then use the Boolean identities to obtain the expression you're solving for.
+
+######DR. EL-OCLA MADE A BIG DEAL ABOUT THIS SO OBVIOUSLY ITS GOING TO BE ON THE MIDTERM.
+
+Converting:
+
+`SOP -> SOM -> complement terms -> POS`.
+
+Here's another questiont that will be on the midterm: What has a lower gate-input cost: SOP or POS?
+
+####Karnaugh Maps (The hardest thing ever)
+
+A k-map is a collection of square. It's a graphical method to represent a truth table. 
+
+######Two Variable Karnaugh Map
+
+They're organized like this:
+
+      y=0  y=1
+x = 0 x'y' x'y
+x = 1 xy'  xy
+
+| K - Map | y = 0 | y = 1 |
+| ---- | ---- | --- |
+| 0    | 0    | 0   |
+| 0    | 0    | 1   |
+| 0    | 1    | 0   |
+| 0    | 1    | 1   |
+
+

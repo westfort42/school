@@ -323,4 +323,48 @@ declare Inc = fun{$ X} {Increment X} end
 {Browse {Inc 6}}
 ```
 
+Lecture 8
+=========
+
+*Oct 1*
+
+####Racket
+
+Functional programming with (Racket)[http://racket-lang.org]
+
+Racket is basically another language purely for academics. It is loosely based off of Lisp and Scheme. It's a lot more like Scheme than it is like Lips.
+
+There was a free book written on Racket, available (here)[http://htdp.org].
+
+*Good Words From Sabbah*: this course is designed to make you a Samurai programmer. It's designed to make you tough, and make you able to do "magic". The more programming paradigms you're able to use, then better you'll be at programming.
+
+For some reason Sabbah is playing a song about Lisp now...
+
+######Racket (for real this time)
+- Uses prefix notation for evaluating expressions
+- Comes with a REPL for trying stuff out
+- Example: square
+```scheme
+(define (sq x) (* x x))
+(sq 3)
+```
+- You can save files as .scm or .rkt
+
+Another boring example:
+```scheme
+(define (fahrenheit->celsius t)
+	(* 5/9(- t 32)))
+```
+The other direction
+```scheme
+(define (celsius->fahrenheit)
+	(+ (* 9/5 t) 32))
+```
+Testing:
+```scheme
+(define (I F)
+	(celsius->fahrenheit (fahrenheit->celsius) f))
+(I 32) ;; should be 32
+```
+
 
