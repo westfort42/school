@@ -401,4 +401,17 @@ POS = no possible simplification in this case
 
  POS: 11 (for GN)
 
- 
+ **Four Variable Maps**
+
+ It's the same concept as before, however, you need to make sure you know where the terms go in the map:
+
+ ```
+             y   y
+    m0  m1  m3  m2
+    m4  m5  m7  m6
+x   m12 m13 m16 m15
+x   m8  m9  m11 m10
+         z   z
+ ```
+
+ Quiz next **Thursday**, assignment due next **Tuesday**..
