@@ -138,4 +138,10 @@ Users: Librarian only
 | 5. Make a selection           | 6. Update database                       |
 |                               | 7. Display results to user (either a success message or an error message)       |
 
+
+**Use Case Image**
+
+<br />
+<br />
+<br />
 ![Use case image](img/assignment1.png)
