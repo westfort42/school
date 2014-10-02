@@ -31,7 +31,7 @@ Start with 635.177 radix 8, then convert to binary:
       7 = 111	// The number in binary is...
 110011110.001111111
 ```
-Once you've got the number in binary, convert to hex. Remember that `2^4 = 16`, so you need **four** binary digits to represent **one** hexadeciaml digit. 
+Once you've got the number in binary, convert to hex. Remember that `2^4 = 16`, so you need **four** binary digits to represent **one** hexadeciaml digit.
 ```
 // Start from the decimal, and go left
 1110 = D
@@ -64,7 +64,7 @@ The guy at the front of the room is yelling about how we need to be careful not 
 ####Arithmetic
 How do you add, subtract, and multiply (we're too dumb for division I guess)? You just do it like a normal human would:
 
-What's 1 + 0 (we're talking addition of two binary numbers)? 
+What's 1 + 0 (we're talking addition of two binary numbers)?
 ```
 	1
 +	0
@@ -129,7 +129,7 @@ This doesn't seem like it's going to be to important, since it wasn't covered la
 
 #######Part 1: Gate Circuits and Boolean Equations
 
-The basic logic operators are `AND`, `OR`, and `NOT`. 
+The basic logic operators are `AND`, `OR`, and `NOT`.
 
 ######Basic Truth Tables
 
@@ -187,9 +187,10 @@ I don't know how to explain this without just showing an example:
 Maxterms are **OR** terms with every variable in **true** or complemented form.
 Minterms are **AND** terms with every variable in **false** or complemented form.
 
-How would you represent minterms number 4? (m<sub>6</sub>)
+How would you represent minterms number 4?
 
 Well, the sixth row of the truth table for XYZ would be,
+
 | X    | Y    | Z   |
 | ---- | ---- | --- |
 | 0    | 0    | 0   |
@@ -299,6 +300,7 @@ F = bd + ab'c + acd'  // L = 8
 The **gate input cost** is the *total number of `AND`s or `OR`s in the function. We also sometimes count the `NOT` gates as well:
 ```
 F = bd + ab'c + acd'
+```
 
 Lecture 7
 =========
@@ -324,15 +326,11 @@ Here's another questiont that will be on the midterm: What has a lower gate-inpu
 
 ####Karnaugh Maps (The hardest thing ever)
 
-A k-map is a collection of square. It's a graphical method to represent a truth table. 
+A k-map is a collection of square. It's a graphical method to represent a truth table.
 
 ######Two Variable Karnaugh Map
 
 They're organized like this:
-
-      y=0  y=1
-x = 0 x'y' x'y
-x = 1 xy'  xy
 
 | K - Map | y = 0 | y = 1 |
 | ---- | ---- | --- |
@@ -352,7 +350,7 @@ Three variable K-Map
 | x = 0 | m0      | m1      | m3      | m2      |
 | x = 1 | m4      | m5      | m7      | m6      |
 
-**K - Maps are only applicable with minterms!!**
+**K - Maps are only applicable with sum of minterms or product or maxterms (not SOP or POS)!!**
 
 | Truth table | x  | y  | z  |
 | -- | -- | -- | -- |
@@ -367,6 +365,40 @@ Three variable K-Map
 
 Reduction in truth tables: you group together numbers that only have *one* bit change between them, ie m3 and m2 have *one* bit change between them (010) and (011), m3 and m5 have *two* bit changes between them (011) and (101).
 
-######In an exam, you may be asked to use Boolean algabra to reduce, or you may be asked to use K - Maps. If it is not specified, you may use whatever method you prefer.
+######In an exam, you may be asked to use Boolean algabra to reduce, or you may be asked to use K - Maps. If it is not specified, you may use whatever method you prefer. Only examples from class, examples from assignments, and questions from quizzes will appear on the midterm and final.
 
+If you're using maxterms instead of minterms, write `0`'s in the K - Map instead of `1`'s.
 
+Example: F(a,b,c) = m3, m4, m6, m7
+
+| K-Map | yz = 00 | yz = 01 | yz = 11 | yz = 10 |
+| ----- | ------- | ------- | ------- | ------- |
+| x = 0 | 0       | 0       | 1       | 0       |
+| x = 1 | 1       | 0       | 1       | 1       |
+
+So the result is, `F = xy' + x'y` (for the SOP) and `F = (y + z')(x + z)` (for the POS).
+
+**Combining Squares**
+
+By doing this in K - Maps, we reduce the number of literals.
+
+Example: m0, m1, m2, m4, m6, m7:
+```
+     1 1 0 1
+     1 0 1 1
+SOP = xy + x'y + z'
+POS = no possible simplification in this case
+```
+ For the example above, the POS can just be determined manually using the SOP:
+
+ ```
+ SOP = xy + x'y + z'
+ POS = (x + y' z') + (x' + y + z')
+ ```
+ What is the gate input cost for each?
+
+ SOP: 10 (for GN)
+
+ POS: 11 (for GN)
+
+ 
