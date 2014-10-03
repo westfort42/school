@@ -52,4 +52,15 @@ Server Side Modifications
 
 Allocate around 1 - 2 weeks for each phase.
 
+How To Run This:
+================
 
+Once you have ocsf unzipped in yout *home directory* (`~/ocsf`), use the following commands:
+
+```bash
+$ cd ocsf
+$ find ~/ocsf -name *.java > sources_list.txt
+$ javac -Xlint:unchecked -d ~/ocsf -classpath "${CLASSPATH}" @sources_list.txt
+```
+
+This compiles it. I haven't figured out how to run it yet.
