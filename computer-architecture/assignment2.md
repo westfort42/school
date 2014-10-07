@@ -38,7 +38,7 @@ Assignment 2
 
 5.
 ```
-  (A + B` + AB')(AB + A'C + BC)
+  (A + B' + AB')(AB + A'C + BC)
 = (A + (B'A)(B'B'))(B + BC)
 = (A + (AB')(B'))(B + C)
 = (A + B')(B + C)
