@@ -408,10 +408,78 @@ POS = no possible simplification in this case
  ```
              y   y
     m0  m1  m3  m2
-    m4  m5  m7  m6
-x   m12 m13 m16 m15
-x   m8  m9  m11 m10
+    m4  m5  m7  m6   x
+w   m12 m13 m16 m15  x
+w   m8  m9  m11 m10
          z   z
  ```
 
  Quiz next **Thursday**, assignment due next **Tuesday**..
+
+Lecture 9
+=========
+
+*Oct 7*
+
+**Quiz on Thursday**
+
+Example: Put this in standard form, find lowest cost:
+
+```
+F(A, B, C) = AB    + AB'    + ABC'
+           = 11(0) + 10 (0) + 110
+```
+
+Use a K - Map:
+
+| K-Map | bc = 00 | bc = 01 | bc = 11 | bc = 10 |
+| ----- | ------- | ------- | ------- | ------- |
+| a = 0 | 0       | 0       | 0       | 0       |
+| a = 1 | 1       | 1       | 1       | 1       |
+
+So this can be simplified to just 'a'. That is both the SOP and the POS.
+
+######Four Variables Maps (Continued)
+
+*Example:* Simplify: 0,2,4,5,6,7,8,10,13,15
+
+```
+         y  y
+   1  0  0  1
+   1  1  1  0   x
+w  0  1  1  0   x
+w  1  0  0  1
+      z  z
+```
+
+The SOP solution is: `xz + x'z' + w'x` **or** `xz + x'z' + w'z'` (both are valid solutions).
+
+The POS solution is: `(x + z')(w' + x' + z)`
+
+*Example 2*: Simplify: 3,4,5,7,9,13,14,15
+
+| K-Map |         |         | y       | y       |       |
+| ----- | ------- | ------- | ------- | ------- | ----- |
+|       | 0       | 0       | 1       | 0       |       |
+|       | 1       | 1       | 1       | 0       | **x** |
+| **w** | 0       | 1       | 1       | 1       | **x** |
+| **w** | 0       | 1       | 0       | 0       |       |
+|       |         | **z**   | **z**   |         |     | |
+
+The SOP solution is: `(xz + wy'z + wxy + w'yz + w'xy')`.
+
+**New Definitions**:
+
+Any simplified term is called an *implicant*. A *prime implicant* is a product term obtained by combining the maximum possible of terms in the K - Map (ie, prime implicant would be something with 3 terms in the 3 variable K - Map). An *Essential prime implicant* is a prime implicant that couldn't be obtained any other way.
+
+Example: Find all essential prime implicants in 0,2,3,8,9,10,11,12,13,14,15:
+
+| K-Map |         |         | y       | y       |       |
+| ----- | ------- | ------- | ------- | ------- | ----- |
+|       | 1       | 0       | 1       | 1       |       |
+|       | 0       | 0       | 0       | 0       | **x** |
+| **w** | 1       | 1       | 1       | 1       | **x** |
+| **w** | 1       | 1       | 1       | 1       |       |
+|       |         | **z**   | **z**   |         |     | |
+
+The *prime implicants* are `w + x'y + x'z'`. All are essential prime implicants as well.
