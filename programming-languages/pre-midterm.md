@@ -9,7 +9,7 @@ Lecture 1
 
 ####Mozart OZ Kernel Programming Languagee
 
-Go to Niki's old blog for this course: (PL Blog)[http://nikipl.wordpress.com/]. The docs are (here)[http://mozart-oz.org/documentation]. To download for mac, go (here)[http://aquamacs.org/download.shtml]. 
+Go to Niki's old blog for this course: (PL Blog)[http://nikipl.wordpress.com/]. The docs are (here)[http://mozart-oz.org/documentation]. To download for mac, go (here)[http://aquamacs.org/download.shtml].
 
 Hello World:
 ```
@@ -74,7 +74,7 @@ Syntax:
 Example:
 
 ```
-declare 
+declare
 X = 21
 X = 22 % This will throw an error
 ```
@@ -86,7 +86,7 @@ Local:
 ```
 local X in
 X = 23
-local X in 
+local X in
 X = 44
 end
 {Browse X}
@@ -116,7 +116,7 @@ Mozart OZ defines declarative computations among other styles:
 
 Most modern languages implement arrays as lists -- this is because crappy arrays can only store data of the same type, and are of predefined size. Lists are dynamic -- put whatever data type you want in there, and don't even worry about what size it is.
 
-Just to make this part of the course even crazier, Mozart is *dynamically typed*. 
+Just to make this part of the course even crazier, Mozart is *dynamically typed*.
 
 ######Records
 Like a hash table without the damn commas:
@@ -176,13 +176,13 @@ Are you doing operations *after* you call your recursive function? Then that isn
 
 Check this out:
 ```
-declare 
+declare
 fun {Fact N A}
 	if N==0 then A
 	else {Fact N-1 N*A}
 	end
 end
-``` 
+```
 There's no operations happening after your function calls! You can literally never overflow the stack, since there *isn't a motherfucking stack*. Oh hell yeah baby. For practice, try making other common recursive functions tail recursive, like Fibonacci or Pascal's Triangle.
 
 ####Lecture 5
@@ -254,7 +254,7 @@ fun {Count N}
 	else I|Help{I + 1}
 	end
 end
-in 
+in
 	{Help 1}
 end
 ```
@@ -267,12 +267,12 @@ A *cell* is a basic unit of encapsulated state.
 
 At this point, we'll begin studying **functional** programming. For this, we're going to use Racket, which is a purely functional language. Right now, Sabbah is talking about a school called Imperial College, where the chair only mandated that the only type of programming language used throughout the entire degree program was functional (and it was apparently O'Caml). I guess this is the good shit.
 
-Functional languages are called "reduction machines". It's also time now for... 
+Functional languages are called "reduction machines". It's also time now for...
 
 ######Lambda Calculus
 Functional thinking and programming is on the rise (see: Scala, Clojure, Erlang, Scheme, Haskell (lol)). If you only know how to use Java at this point, fuck you.
 
-Functional programming is also declarative, however, declarative programming encapsulates a bunch of different types of programming. HTML is declarative, but it is definitely not functional. 
+Functional programming is also declarative, however, declarative programming encapsulates a bunch of different types of programming. HTML is declarative, but it is definitely not functional.
 
 In functional programming, **all functions are anonymous**. Next lecture we'll talk about lambda expressions in more detail.
 
@@ -291,7 +291,7 @@ Lamba Calculus is about *lambda functions*. **Every function we're going to writ
 
 ```
 
-The basic logic for lambda calculus is *reductionism*. You keep reducing until you get a *normal* value. In math, everything is infixed. Here, everything is prefixed. 
+The basic logic for lambda calculus is *reductionism*. You keep reducing until you get a *normal* value. In math, everything is infixed. Here, everything is prefixed.
 
 ######Single Argument Representation
 The function `x - y` is represented as `lambda(x).lambda(y).(x - y)`. That means that each function takes one argument.
@@ -344,27 +344,88 @@ For some reason Sabbah is playing a song about Lisp now...
 - Uses prefix notation for evaluating expressions
 - Comes with a REPL for trying stuff out
 - Example: square
-```scheme
+```Racket
 (define (sq x) (* x x))
 (sq 3)
 ```
 - You can save files as .scm or .rkt
 
 Another boring example:
-```scheme
+```Racket
 (define (fahrenheit->celsius t)
 	(* 5/9(- t 32)))
 ```
 The other direction
-```scheme
+```Racket
 (define (celsius->fahrenheit)
 	(+ (* 9/5 t) 32))
 ```
 Testing:
-```scheme
+```Racket
 (define (I F)
 	(celsius->fahrenheit (fahrenheit->celsius) f))
 (I 32) ;; should be 32
 ```
+---
 
+Lecture 10
+==========
 
+*Oct 8*
+
+Racket: it's a lambda calculus machine. It enforces lambda calculus and combinators.
+
+Everything you're going to program with is a function. Why is this so tight?
+
+- anonymous functions
+- first-class functions
+- tail-call functions
+- map/filter/fold
+- currying
+- immutable types
+
+######Conditional Expressions
+
+*If Statement*
+
+```Racket
+(if (< a 10)
+	(if (> a 20)
+		(* a a)
+		0))
+```
+
+*Cond Statement*
+
+```Racket
+(cond ) // see Racket docs
+```
+
+*And - Or Conditional*
+
+```Racket
+(define (how alike? A b)
+	(or (and(zero? A) (zero? B))
+		(and (< a 0) (< b 0))
+		(and (>a 0) (> b 0))
+	)
+)
+```
+
+There is also the *when-else conditional*, and the *case* conditional.
+
+######Pattern Matching/Loops
+
+You can use the `match` keyword, see the [Racket docs](http://docs.racket-lang.org/reference/).
+
+Loops are really crazy in Racket. You can have conditionals in your loop, ie, the `for/and` loop. It's also pretty common to use `map` and `filter`.
+
+######Variables
+
+Local variables are defined with `let`. There's also `letrec`, which allows functions to access the value of the variable defined with letrec if its outside the function scope (I think?? I need to read the docs).
+
+`Letrec` is used for mutually recursive functions, usually.
+
+######Structures in Racket
+
+Well obviously you're going to have to use lists. There is a **huge** example that does a binary tree implementation, so just go look at that (its in the class notes).

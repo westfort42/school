@@ -483,3 +483,7 @@ Example: Find all essential prime implicants in 0,2,3,8,9,10,11,12,13,14,15:
 |       |         | **z**   | **z**   |         |     | |
 
 The *prime implicants* are `w + x'y + x'z'`. All are essential prime implicants as well.
+
+**Five (or more) Variable Maps**
+
+You do the same thing, but with two adjacent four variable maps. If you wanted a six variabke maps, you'd use four adjacent four variable maps. If you have seven... use a computer.
