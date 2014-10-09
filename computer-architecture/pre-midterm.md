@@ -487,3 +487,22 @@ The *prime implicants* are `w + x'y + x'z'`. All are essential prime implicants 
 **Five (or more) Variable Maps**
 
 You do the same thing, but with two adjacent four variable maps. If you wanted a six variabke maps, you'd use four adjacent four variable maps. If you have seven... use a computer.
+
+Lecture 10
+==========
+
+*Oct 9*
+
+Today we covered **don't cares** in K - Maps.
+
+Example: Find the optimum POS solution: (3,9,11,12,13,14,15) with don't care being (1,4,6).
+
+| K-Map |         |         | y       | y       |       |
+| ----- | ------- | ------- | ------- | ------- | ----- |
+|       | 0       | x       | 1       | 0       |       |
+|       | x       | 0       | 0       | x       | **x** |
+| **w** | 1       | 1       | 1       | 1       | **x** |
+| **w** | 0       | 1       | 1       | 0       |       |
+|       |         | **z**   | **z**   |         |     | |
+
+=  `BD' + AD + B'D` (you can actually find a more optimized solution).

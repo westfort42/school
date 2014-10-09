@@ -1,0 +1,158 @@
+/* hide contents until we know if user is signed in or not */
+body .hoodie-account-signedin,
+body .hoodie-account-signedout,
+body .hoodie-account-error {
+  display: none;
+}
+
+html[data-hoodie-account-status=signedin]  .hoodie-account-signedin,
+html[data-hoodie-account-status=error]     .hoodie-account-error,
+html[data-hoodie-account-status=signedout] .hoodie-account-signedout {
+  display: block;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+input[type=text] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+input[type=text]:focus {
+  border-color: #11bbee;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+ul#todolist {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+#todolist li {
+  list-style-type: none;
+}
+
+#todolist li input[type=checkbox] {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  height: 34px;
+  padding: 6px 12px;
+  margin: 0px 0px 5px;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+#todolist li input[type=text] {
+  display:none
+}
+
+#todolist li.editing input[type=text] {
+  display: inline-block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#todolist li.editing input[type=text]:focus {
+  border-color: #11bbee;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#todolist li.editing input[type=text]::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+#todolist li.editing input[type=text]:-ms-input-placeholder {
+  color: #999;
+}
+
+#todolist li.editing input[type=text]::-webkit-input-placeholder {
+  color: #999;
+}
+
+#todolist li.editing label {
+  display: none;
+}
+
+#todolist li label {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+.btn-fancy {
+  background: #11bbee;
+  color: #fff;
+  border-color: #333;
+}
+
+.slider {
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  /* thx jQuery */
+}
+
+.slide-1 {
+  height: 90vh;
+  background: #fff;
+}
+
+.slide-2 {
+  height: 90vh;
+  background: #f2f2f2;
+}
+
+.slide-3 {
+  height: 90vh;
+  background: #fff;
+}
+
+.slide-4 {
+  height: 90vh;
+  background: #f2f2f2;
+}
+
+.slick-prev {
+  left: 8px;
+}
+
+.slick-next {
+  right: 8px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #555;
+}

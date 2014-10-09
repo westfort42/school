@@ -1,3 +1,5 @@
+// TO DO before launching: try to add those event listeners to make the thing reactive
+
 "use strict";
 // initialize Hoodie
 var hoodie  = new Hoodie();
@@ -9,7 +11,29 @@ function Todos($element) {
 
   // Handle marking todo as "done"
   $el.on('click', 'input[type=checkbox]', function() {
-    hoodie.store.remove('todo', $(this).parent().data('id'));
+
+    // If you wanna make this super snappy, remove the item from the DOM onclick, and 
+    // let hoodie catch up when it can!
+    // Let's break down what's happening:
+    
+    // 1. We need to reference each individual list itme somehow. Since the only thing that's
+    //    being set dynamically that seperates each item is its data-id, let's use that!
+    //    This is how we reference that data attribute:
+    var current = $(this).parent().data('id');
+
+    // 2. Now that we've got the data-id and stored it in 'current', let's find the list item
+    //    that matches that data-id, and get it out of our DOM (this is jQuery's way if doing
+    //    that, in case this looks unfamiliar:
+    $("ul").find("[data-id='" + current + "']").remove();
+    
+    // 3. It may be out of the DOM, but until we delete it from the database, it's going to keep
+    //    reappearing every time we reload the page. So, let's delete it from our database (this
+    //    this affects both the local database and CouchDB):
+    hoodie.store.remove('todo', current);
+
+    // That's it! As a little JavaScript sidenote, we return false here to prevent the default
+    // checkbox clicking behaviour. This has the exact same effect as 'event.preventDefault();'
+    // has.
     return false;
   });
 
