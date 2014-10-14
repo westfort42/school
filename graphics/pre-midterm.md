@@ -51,7 +51,7 @@ Lecture 5
 
 *Sep 23*
 
-Today we're talking about how to deal with the camera. The math library that's included with the textbook has a `lookAt' function that we can use to make things easier. 
+Today we're talking about how to deal with the camera. The math library that's included with the textbook has a `lookAt' function that we can use to make things easier.
 
 ######Lights and Materials
 
@@ -86,7 +86,7 @@ Lecture 6
 
 *Sep 25*
 
-Fragment Shaders vs Vertex Shaders: which one gives a better effect? -- It's fragment shading. Fragment shading used to be only possible if you were fiddling around with assembly language, but now OpenGL and DirectX can use fragment shading. 
+Fragment Shaders vs Vertex Shaders: which one gives a better effect? -- It's fragment shading. Fragment shading used to be only possible if you were fiddling around with assembly language, but now OpenGL and DirectX can use fragment shading.
 
 ######WebGL Primitives
 ```javascript
@@ -134,4 +134,9 @@ That's not actually too good, because you js controlling the loop, and you keep 
 
 *Double Buffering:* prevents display of partial rendering. Always display front-buffer, render into back buffer, swap buffers when necessary.
 
+Lecture Who Knows
+=================
 
+*Oct 14*
+
+**Remember** the project is due this Thursday.

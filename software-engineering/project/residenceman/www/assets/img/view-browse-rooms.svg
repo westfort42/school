@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="640px" height="1136px" viewBox="0 0 640 1136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>Residence UI Design | View Rooms</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Residence-UI-Design-|-View-Rooms" sketch:type="MSArtboardGroup">
+            <g id="Menubar-Background" sketch:type="MSLayerGroup">
+                <rect id="Background" fill-opacity="0.65" fill="#333333" sketch:type="MSShapeGroup" x="0" y="0" width="640" height="128"></rect>
+                <rect id="Line" opacity="0.4" fill="#000000" sketch:type="MSShapeGroup" x="0" y="128" width="640" height="1"></rect>
+            </g>
+            <text id="View-Rooms-|-Berkele" fill="#FFFFFF" sketch:type="MSTextLayer" font-family="Open Sans" font-size="34" font-weight="normal" sketch:alignment="middle">
+                <tspan x="138.405762" y="99">View Rooms | Berkeley</tspan>
+            </text>
+            <g id="Status-Bar-/-Black" sketch:type="MSLayerGroup">
+                <rect id="Background" fill-opacity="0" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="640" height="41"></rect>
+                <g id="Charge" transform="translate(524.000000, 6.000000)">
+                    <g id="Battery-Icon" transform="translate(56.000000, 5.000000)" sketch:type="MSShapeGroup">
+                        <rect id="Battery" stroke="#FFFFFF" x="0" y="0" width="45" height="19" rx="3"></rect>
+                        <rect id="Charge" stroke="#FFFFFF" fill="#7ED321" x="2" y="2" width="17" height="15" rx="2"></rect>
+                        <path d="M49,9.46455558 C49,11.2277927 47.6961455,12.6864982 46,12.9291112 L46,6 C47.6961455,6.24261297 49,7.70131842 49,9.46455558 Z" id="+" fill="#FFFFFF"></path>
+                    </g>
+                    <text id="42%" fill="#FFFFFF" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="24" font-weight="normal">
+                        <tspan x="0" y="23">42%</tspan>
+                    </text>
+                </g>
+                <path d="M502.855529,28.7378929 L502.855529,21.6214643 L506.279529,25.3503571 L502.855529,28.7378929 L502.855529,28.7378929 L502.855529,28.7378929 L502.855529,28.7378929 Z M506.436706,14.6930714 L502.855529,18.2956429 L502.855529,11.4704286 L506.436706,14.6930714 L506.436706,14.6930714 L506.436706,14.6930714 L506.436706,14.6930714 Z M503.715765,20.0217143 L509.029647,14.6930714 L501.101176,7 L500.913882,7 L500.913882,17.6997143 L495.532235,12.0576786 L494,13.6583929 L500.475294,20.0217143 L494,26.3840714 L495.532235,27.9847857 L500.913882,22.34275 L500.913882,33.0415 L501.256471,33.0415 L509.106824,25.3291429 L503.715765,20.0217143 L503.715765,20.0217143 Z" id="Bluetooth-Icon" opacity="0.45" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M175.991503,14.0417534 C179.871048,14.0417534 183.406722,15.4709041 186.117706,17.8143562 L188,15.7362192 C184.789204,12.9489315 180.595777,11 175.991503,11 C171.394227,11 167.206797,12.9430137 164,15.7214247 L165.878296,17.8025205 C168.58728,15.4659726 172.116956,14.0417534 175.991503,14.0417534 L175.991503,14.0417534 Z M175.991503,20.0404384 C178.316631,20.0404384 180.440835,20.8847123 182.07922,22.2753973 L184.070474,20.0759452 C181.903286,18.2157808 179.084343,17.0006575 175.991503,17.0006575 C172.904661,17.0006575 170.087717,18.2128219 167.922529,20.0670685 L169.910783,22.2694795 C171.548169,20.8817534 173.669374,20.0404384 175.991503,20.0404384 L175.991503,20.0404384 Z M180.086967,24.4748493 C178.978383,23.5546301 177.550918,22.9174795 175.990504,22.9174795 C174.433088,22.9174795 173.007622,23.5536438 171.899038,24.4699178 L175.990504,29 L180.086967,24.4748493 L180.086967,24.4748493 Z" id="Wifi" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <g id="Signal" transform="translate(13.000000, 15.000000)" sketch:type="MSShapeGroup">
+                    <circle id="Oval-1" fill="#FFFFFF" cx="5.5" cy="5.5" r="5.5"></circle>
+                    <circle id="Oval-1-copy" fill="#FFFFFF" cx="19.5" cy="5.5" r="5.5"></circle>
+                    <circle id="Oval-1-copy-2" fill="#FFFFFF" cx="33.5" cy="5.5" r="5.5"></circle>
+                    <circle id="Oval-1-copy-3" stroke="#FFFFFF" cx="47.5" cy="5.5" r="5.5"></circle>
+                    <circle id="Oval-1-copy-4" stroke="#FFFFFF" cx="61.5" cy="5.5" r="5.5"></circle>
+                </g>
+                <text id="Sketch" fill="#FFFFFF" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="23" font-weight="normal">
+                    <tspan x="87" y="29">Sketch</tspan>
+                </text>
+                <text id="9:41-AM" fill="#FFFFFF" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="24" font-weight="420" sketch:alignment="middle" letter-spacing="1.19999981">
+                    <tspan x="270.440001" y="29">9:41 AM</tspan>
+                </text>
+            </g>
+            <text id="First-Floor" sketch:type="MSTextLayer" font-family="Open Sans" font-size="36" font-weight="bold" fill="#333333">
+                <tspan x="10" y="180">First Floor</tspan>
+            </text>
+            <text id="Second-Floor" sketch:type="MSTextLayer" font-family="Open Sans" font-size="36" font-weight="bold" fill="#333333">
+                <tspan x="10" y="580">Second Floor</tspan>
+            </text>
+            <rect id="Rectangle-10" fill="#EEEEEE" sketch:type="MSShapeGroup" x="0" y="206" width="640" height="80"></rect>
+            <g id="Home" sketch:type="MSLayerGroup" transform="translate(28.000000, 221.000000)" stroke="#777777" stroke-width="2">
+                <path d="M38,14 L48,24 L44,24 L44,46 L4,46 L4,24 L4,24 L0,24 L22.5882915,1.41170852 C23.3703945,0.629605517 24.6320434,0.632043433 25.4117085,1.41170852 L30,6 L30,4.99961498 C30,3.88743329 30.8945804,3 31.9981014,3 L36.0018986,3 C37.1132936,3 38,3.8992496 38,5.0085302 L38,14 L38,14 Z M20.999615,30 C19.8952581,30 19,30.8945138 19,31.9940603 L19,46 L29,46 L29,31.9940603 C29,30.8927712 28.1125667,30 27.000385,30 L20.999615,30 Z" id="Rectangle-72" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-35" sketch:type="MSShapeGroup" cx="24" cy="19" r="5"></circle>
+            </g>
+            <rect id="Rectangle-11" fill="#F8F8F8" sketch:type="MSShapeGroup" x="0" y="286" width="640" height="80"></rect>
+            <g id="Shop" sketch:type="MSLayerGroup" transform="translate(29.000000, 300.000000)" stroke="#777777" stroke-width="2">
+                <path d="M10,45.125 L4,45.125 L4,15.125 L44,15.125 L44,45.125 L22,45.125 L22,47 L10,47 L10,45.125 Z M2,13 L2,47 L46,47 L46,13 L2,13 Z M2,13 L2,15.125 L46,15.125 L46,13 L2,13 Z" id="Rectangle-182" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <path d="M9.99406028,23 C8.8927712,23 8,23.8970262 8,25.0049466 L8,47 L24,47 L24,25.0049466 C24,23.8976452 23.1054862,23 22.0059397,23 L9.99406028,23 Z M12.0085302,25 C10.8992496,25 10,25.8896739 10,26.991155 L10,47 L22,47 L22,26.991155 C22,25.8914705 21.0980496,25 19.9914698,25 L12.0085302,25 Z" id="Rectangle-185" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <path d="M7.89865304,8.89865304 C7.49085273,10.6750694 5.90015343,12 4,12 C1.790861,12 0,10.209139 0,8 C0,6.09984657 1.32493061,4.50914727 3.10134696,4.10134696 L3,4 L7,0 L41,0 L45,4 L44.898653,4.10134696 C46.6750694,4.50914727 48,6.09984657 48,8 C48,10.209139 46.209139,12 44,12 C42.0998466,12 40.5091473,10.6750694 40.101347,8.89865304 L40,9 L39.8739825,9 C39.4299397,10.7252272 37.8638394,12 36,12 C34.1361606,12 32.5700603,10.7252272 32.1260175,9 L31.8739825,9 C31.4299397,10.7252272 29.8638394,12 28,12 C26.1361606,12 24.5700603,10.7252272 24.1260175,9 L23.8739825,9 C23.4299397,10.7252272 21.8638394,12 20,12 C18.1361606,12 16.5700603,10.7252272 16.1260175,9 L15.8739825,9 C15.4299397,10.7252272 13.8638394,12 12,12 C10.1361606,12 8.57006028,10.7252272 8.12601749,9 L8,9 L7.89865304,8.89865304 Z" id="Oval-36" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-188" sketch:type="MSShapeGroup" x="28" y="19" width="12" height="10" rx="2"></rect>
+            </g>
+            <rect id="Rectangle-13" fill="#EEEEEE" sketch:type="MSShapeGroup" x="0" y="365" width="640" height="80"></rect>
+            <rect id="Rectangle-12" fill="#F8F8F8" sketch:type="MSShapeGroup" x="0" y="445" width="640" height="80"></rect>
+            <rect id="Rectangle-17" fill="#EEEEEE" sketch:type="MSShapeGroup" x="0" y="607" width="640" height="80"></rect>
+            <rect id="Rectangle-14" fill="#F8F8F8" sketch:type="MSShapeGroup" x="0" y="687" width="640" height="80"></rect>
+            <rect id="Rectangle-15" fill="#EEEEEE" sketch:type="MSShapeGroup" x="0" y="766" width="640" height="80"></rect>
+            <rect id="Rectangle-16" fill="#F8F8F8" sketch:type="MSShapeGroup" x="0" y="846" width="640" height="80"></rect>
+            <g id="Home-2" sketch:type="MSLayerGroup" transform="translate(28.000000, 378.000000)" stroke="#777777" stroke-width="2">
+                <path d="M38,14 L48,24 L44,24 L44,46 L4,46 L4,24 L4,24 L0,24 L22.5882915,1.41170852 C23.3703945,0.629605517 24.6320434,0.632043433 25.4117085,1.41170852 L30,6 L30,4.99961498 C30,3.88743329 30.8945804,3 31.9981014,3 L36.0018986,3 C37.1132936,3 38,3.8992496 38,5.0085302 L38,14 L38,14 Z M20.999615,30 C19.8952581,30 19,30.8945138 19,31.9940603 L19,46 L29,46 L29,31.9940603 C29,30.8927712 28.1125667,30 27.000385,30 L20.999615,30 Z" id="Rectangle-72" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-35" sketch:type="MSShapeGroup" cx="24" cy="19" r="5"></circle>
+            </g>
+            <g id="Home-3" sketch:type="MSLayerGroup" transform="translate(28.000000, 461.000000)" stroke="#777777" stroke-width="2">
+                <path d="M38,14 L48,24 L44,24 L44,46 L4,46 L4,24 L4,24 L0,24 L22.5882915,1.41170852 C23.3703945,0.629605517 24.6320434,0.632043433 25.4117085,1.41170852 L30,6 L30,4.99961498 C30,3.88743329 30.8945804,3 31.9981014,3 L36.0018986,3 C37.1132936,3 38,3.8992496 38,5.0085302 L38,14 L38,14 Z M20.999615,30 C19.8952581,30 19,30.8945138 19,31.9940603 L19,46 L29,46 L29,31.9940603 C29,30.8927712 28.1125667,30 27.000385,30 L20.999615,30 Z" id="Rectangle-72" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-35" sketch:type="MSShapeGroup" cx="24" cy="19" r="5"></circle>
+            </g>
+            <rect id="Rectangle-19" fill="#EEEEEE" sketch:type="MSShapeGroup" x="0" y="926" width="640" height="80"></rect>
+            <rect id="Rectangle-9" fill="#9B9B9B" sketch:type="MSShapeGroup" x="14" y="1041" width="610" height="67"></rect>
+            <text id="Load-More" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="633" sketch:alignment="middle" fill="#FFFFFF">
+                <tspan x="249.001953" y="1085">Load More</tspan>
+            </text>
+            <path d="M18.5,71 L73.5,71" id="Line" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M18.5,96 L60.5,96" id="Line-4" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M18.5,84 L49.5,84" id="Line-3" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M18.5,108 L68.5,108" id="Line-2" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <text id="Room-1001" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="111" y="256">Room 1001</tspan>
+            </text>
+            <text id="Room-1003" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="111" y="332">Room 1003</tspan>
+            </text>
+            <text id="Room-1005" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="111" y="412">Room 1005</tspan>
+            </text>
+            <text id="Room-1006" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="112" y="495">Room 1006</tspan>
+            </text>
+            <g id="Home-6" sketch:type="MSLayerGroup" transform="translate(28.000000, 623.000000)" stroke="#777777" stroke-width="2">
+                <path d="M38,14 L48,24 L44,24 L44,46 L4,46 L4,24 L4,24 L0,24 L22.5882915,1.41170852 C23.3703945,0.629605517 24.6320434,0.632043433 25.4117085,1.41170852 L30,6 L30,4.99961498 C30,3.88743329 30.8945804,3 31.9981014,3 L36.0018986,3 C37.1132936,3 38,3.8992496 38,5.0085302 L38,14 L38,14 Z M20.999615,30 C19.8952581,30 19,30.8945138 19,31.9940603 L19,46 L29,46 L29,31.9940603 C29,30.8927712 28.1125667,30 27.000385,30 L20.999615,30 Z" id="Rectangle-72" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-35" sketch:type="MSShapeGroup" cx="24" cy="19" r="5"></circle>
+            </g>
+            <g id="Shop-2" sketch:type="MSLayerGroup" transform="translate(29.000000, 702.000000)" stroke="#777777" stroke-width="2">
+                <path d="M10,45.125 L4,45.125 L4,15.125 L44,15.125 L44,45.125 L22,45.125 L22,47 L10,47 L10,45.125 Z M2,13 L2,47 L46,47 L46,13 L2,13 Z M2,13 L2,15.125 L46,15.125 L46,13 L2,13 Z" id="Rectangle-182" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <path d="M9.99406028,23 C8.8927712,23 8,23.8970262 8,25.0049466 L8,47 L24,47 L24,25.0049466 C24,23.8976452 23.1054862,23 22.0059397,23 L9.99406028,23 Z M12.0085302,25 C10.8992496,25 10,25.8896739 10,26.991155 L10,47 L22,47 L22,26.991155 C22,25.8914705 21.0980496,25 19.9914698,25 L12.0085302,25 Z" id="Rectangle-185" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <path d="M7.89865304,8.89865304 C7.49085273,10.6750694 5.90015343,12 4,12 C1.790861,12 0,10.209139 0,8 C0,6.09984657 1.32493061,4.50914727 3.10134696,4.10134696 L3,4 L7,0 L41,0 L45,4 L44.898653,4.10134696 C46.6750694,4.50914727 48,6.09984657 48,8 C48,10.209139 46.209139,12 44,12 C42.0998466,12 40.5091473,10.6750694 40.101347,8.89865304 L40,9 L39.8739825,9 C39.4299397,10.7252272 37.8638394,12 36,12 C34.1361606,12 32.5700603,10.7252272 32.1260175,9 L31.8739825,9 C31.4299397,10.7252272 29.8638394,12 28,12 C26.1361606,12 24.5700603,10.7252272 24.1260175,9 L23.8739825,9 C23.4299397,10.7252272 21.8638394,12 20,12 C18.1361606,12 16.5700603,10.7252272 16.1260175,9 L15.8739825,9 C15.4299397,10.7252272 13.8638394,12 12,12 C10.1361606,12 8.57006028,10.7252272 8.12601749,9 L8,9 L7.89865304,8.89865304 Z" id="Oval-36" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-188" sketch:type="MSShapeGroup" x="28" y="19" width="12" height="10" rx="2"></rect>
+            </g>
+            <g id="Home-4" sketch:type="MSLayerGroup" transform="translate(28.000000, 780.000000)" stroke="#777777" stroke-width="2">
+                <path d="M38,14 L48,24 L44,24 L44,46 L4,46 L4,24 L4,24 L0,24 L22.5882915,1.41170852 C23.3703945,0.629605517 24.6320434,0.632043433 25.4117085,1.41170852 L30,6 L30,4.99961498 C30,3.88743329 30.8945804,3 31.9981014,3 L36.0018986,3 C37.1132936,3 38,3.8992496 38,5.0085302 L38,14 L38,14 Z M20.999615,30 C19.8952581,30 19,30.8945138 19,31.9940603 L19,46 L29,46 L29,31.9940603 C29,30.8927712 28.1125667,30 27.000385,30 L20.999615,30 Z" id="Rectangle-72" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-35" sketch:type="MSShapeGroup" cx="24" cy="19" r="5"></circle>
+            </g>
+            <g id="Home-5" sketch:type="MSLayerGroup" transform="translate(28.000000, 863.000000)" stroke="#777777" stroke-width="2">
+                <path d="M38,14 L48,24 L44,24 L44,46 L4,46 L4,24 L4,24 L0,24 L22.5882915,1.41170852 C23.3703945,0.629605517 24.6320434,0.632043433 25.4117085,1.41170852 L30,6 L30,4.99961498 C30,3.88743329 30.8945804,3 31.9981014,3 L36.0018986,3 C37.1132936,3 38,3.8992496 38,5.0085302 L38,14 L38,14 Z M20.999615,30 C19.8952581,30 19,30.8945138 19,31.9940603 L19,46 L29,46 L29,31.9940603 C29,30.8927712 28.1125667,30 27.000385,30 L20.999615,30 Z" id="Rectangle-72" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-35" sketch:type="MSShapeGroup" cx="24" cy="19" r="5"></circle>
+            </g>
+            <text id="Room-2002" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="111" y="658">Room 2002</tspan>
+            </text>
+            <text id="Room-2004" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="111" y="734">Room 2004</tspan>
+            </text>
+            <g id="Shop-3" sketch:type="MSLayerGroup" transform="translate(29.000000, 941.000000)" stroke="#777777" stroke-width="2">
+                <path d="M10,45.125 L4,45.125 L4,15.125 L44,15.125 L44,45.125 L22,45.125 L22,47 L10,47 L10,45.125 Z M2,13 L2,47 L46,47 L46,13 L2,13 Z M2,13 L2,15.125 L46,15.125 L46,13 L2,13 Z" id="Rectangle-182" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <path d="M9.99406028,23 C8.8927712,23 8,23.8970262 8,25.0049466 L8,47 L24,47 L24,25.0049466 C24,23.8976452 23.1054862,23 22.0059397,23 L9.99406028,23 Z M12.0085302,25 C10.8992496,25 10,25.8896739 10,26.991155 L10,47 L22,47 L22,26.991155 C22,25.8914705 21.0980496,25 19.9914698,25 L12.0085302,25 Z" id="Rectangle-185" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <path d="M7.89865304,8.89865304 C7.49085273,10.6750694 5.90015343,12 4,12 C1.790861,12 0,10.209139 0,8 C0,6.09984657 1.32493061,4.50914727 3.10134696,4.10134696 L3,4 L7,0 L41,0 L45,4 L44.898653,4.10134696 C46.6750694,4.50914727 48,6.09984657 48,8 C48,10.209139 46.209139,12 44,12 C42.0998466,12 40.5091473,10.6750694 40.101347,8.89865304 L40,9 L39.8739825,9 C39.4299397,10.7252272 37.8638394,12 36,12 C34.1361606,12 32.5700603,10.7252272 32.1260175,9 L31.8739825,9 C31.4299397,10.7252272 29.8638394,12 28,12 C26.1361606,12 24.5700603,10.7252272 24.1260175,9 L23.8739825,9 C23.4299397,10.7252272 21.8638394,12 20,12 C18.1361606,12 16.5700603,10.7252272 16.1260175,9 L15.8739825,9 C15.4299397,10.7252272 13.8638394,12 12,12 C10.1361606,12 8.57006028,10.7252272 8.12601749,9 L8,9 L7.89865304,8.89865304 Z" id="Oval-36" fill="#777777" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-188" sketch:type="MSShapeGroup" x="28" y="19" width="12" height="10" rx="2"></rect>
+            </g>
+            <text id="Room-2014" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="111" y="973">Room 2014</tspan>
+            </text>
+            <text id="Room-2007" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="111" y="814">Room 2007</tspan>
+            </text>
+            <text id="Room-2010" sketch:type="MSTextLayer" font-family="Open Sans" font-size="24" font-weight="normal" fill="#777777">
+                <tspan x="112" y="897">Room 2010</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

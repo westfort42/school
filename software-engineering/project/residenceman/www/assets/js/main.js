@@ -115,9 +115,38 @@ hoodie.account.on('signout', todos.clear);
 
 // handle creating a new task
 $('#todoinput').on('keypress', function(event) {
-  // ENTER & non-empty.
+  // ENTER & non-empty. ENTER is keycode 13 and event.target.value.length means (non-empty)
   if (event.keyCode === 13 && event.target.value.length) {
     hoodie.store.add('todo', {title: event.target.value});
     event.target.value = '';
   }
+});
+
+// make inputs disabled if you're not signed in
+if (hoodie.account.username == null) {
+  $('input').attr('disabled', true);
+}
+
+if (hoodie.account.username != null) {
+  $('#username-signed-in').text(hoodie.account.username);
+}
+
+// remove the disabled attribute on singup (don't reload the page)
+hoodie.account.on('signup', function() {
+  $('input').attr('disabled', false);
+  $('.hoodie-on-sign-in').css( "display", "block" );
+  $('#username-signed-in').text(hoodie.account.username);
+});
+
+// do the same thing on sign in
+hoodie.account.on('signin', function () {
+  $('input').attr('disabled', false);
+  $('.hoodie-on-sign-in').css( "display", "block" );
+  $('#username-signed-in').text(hoodie.account.username);
+});
+
+// disable the inputs again when signed out
+hoodie.account.on('signout', function () {
+  $('input').attr('disabled', true);
+  $('#username-signed-in').text(' ');
 });

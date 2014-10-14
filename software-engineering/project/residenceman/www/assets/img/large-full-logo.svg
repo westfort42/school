@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="759px" height="155px" viewBox="0 0 759 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>Vector 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Line" sketch:type="MSLayerGroup" transform="translate(2.000000, 151.000000)" stroke-width="5" stroke-linecap="square">
+            <path d="M0.5,1.5 L148.526316,1.5" stroke="#00ACFF" sketch:type="MSShapeGroup"></path>
+            <path d="M151.5,1.5 L299.526316,1.5" id="Line-2" stroke="#9012FE" sketch:type="MSShapeGroup"></path>
+            <path d="M303.5,1.5 L451.526316,1.5" id="Line-3" stroke="#7ED321" sketch:type="MSShapeGroup"></path>
+            <path d="M454.5,1.5 L602.526316,1.5" id="Line-4" stroke="#F4E532" sketch:type="MSShapeGroup"></path>
+            <path d="M605.5,1.5 L753.526316,1.5" id="Line-5" stroke="#D0011B" sketch:type="MSShapeGroup"></path>
+        </g>
+        <text id="LURM" sketch:type="MSTextLayer" font-family="FreightText" font-size="80" font-weight="313" sketch:alignment="middle" letter-spacing="40" fill="#555555">
+            <tspan x="191.06" y="51">LUR</tspan>
+            <tspan x="460.42" y="51" letter-spacing="80">M</tspan>
+        </text>
+        <text id="Lakehead-University-" sketch:type="MSTextLayer" font-family="Open Sans" font-size="28" font-weight="260" sketch:alignment="middle" fill="#555555">
+            <tspan x="98.3027344" y="107">Lakehead University Residence Management</tspan>
+        </text>
+    </g>
+</svg>

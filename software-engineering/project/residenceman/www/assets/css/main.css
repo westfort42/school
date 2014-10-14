@@ -1,7 +1,21 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 700;
+}
+
+p, ul, li, ol, input, textarea, button {
+  font-weight: 400;
+  font-size: 18px;
+}
+
 /* hide contents until we know if user is signed in or not */
 body .hoodie-account-signedin,
 body .hoodie-account-signedout,
-body .hoodie-account-error {
+body .hoodie-account-error,
+body .hoodie-on-sign-in {
   display: none;
 }
 
@@ -9,10 +23,6 @@ html[data-hoodie-account-status=signedin]  .hoodie-account-signedin,
 html[data-hoodie-account-status=error]     .hoodie-account-error,
 html[data-hoodie-account-status=signedout] .hoodie-account-signedout {
   display: block;
-}
-
-.navbar {
-  margin-bottom: 0;
 }
 
 input[type=text] {
@@ -32,6 +42,15 @@ input[type=text]:focus {
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.alert {
+  margin-bottom: 0px;
+  margin-top: 15px;
 }
 
 ul#todolist {
@@ -110,10 +129,44 @@ ul#todolist {
   line-height: 1.42857143;
 }
 
+#username-signed-in {
+  color: #333;
+  text-transform: capitalize;
+}
+
 .btn-fancy {
   background: #11bbee;
   color: #fff;
-  border-color: #333;
+  border: none;
+}
+
+.btn-fancy:hover {
+  background: #0FA8D6;
+  color: #fff;
+  border: none;
+}
+
+.btn-who {
+  background: #118BEE;
+  color: #fff;
+  border: none;
+}
+
+.btn-who:hover {
+  background: #0F7AD1;
+  color: #fff;
+  border: none;
+}
+
+.page-subheader {
+  padding-bottom: 40px;
+}
+
+.img-center {
+  margin: 0 auto;
+  text-align: center;
+  max-height: 600px !important;
+  margin-top: 15px;
 }
 
 .slider {
@@ -126,23 +179,23 @@ ul#todolist {
 }
 
 .slide-1 {
-  height: 90vh;
+  min-height: 90vh;
   background: #fff;
 }
 
 .slide-2 {
-  height: 90vh;
-  background: #f2f2f2;
+  min-height: 90vh;
+  background: #fdfdfd;
 }
 
 .slide-3 {
-  height: 90vh;
+  min-height: 90vh;
   background: #fff;
 }
 
 .slide-4 {
-  height: 90vh;
-  background: #f2f2f2;
+  min-height: 90vh;
+  background: #fdfdfd;
 }
 
 .slick-prev {

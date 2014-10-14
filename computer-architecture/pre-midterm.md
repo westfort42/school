@@ -506,3 +506,19 @@ Example: Find the optimum POS solution: (3,9,11,12,13,14,15) with don't care bei
 |       |         | **z**   | **z**   |         |     | |
 
 =  `BD' + AD + B'D` (you can actually find a more optimized solution).
+
+Lecture 11
+==========
+
+*Oct 14*
+
+Today, we start **Part 3** of Chapter 2. Next week is the midterm (I think it's Tuesday).
+
+*Buffer*: electronic amplifier used to improve circuit voltage levels and increase the speed of curcuit operation.
+*NAND Gate*: represents `AND NOT`. The symbol is the same as an `AND` gate with a little weird bubble on the end of it.
+*NOR Gate*: represents `OR NOT`. Symbol is `OR` gate with bubble.
+
+There are also the exclusive version of the `AND` and `OR` gates, called the `XAND` and `XOR` gates. These stand for 'exclusive and' and 'exclusive or', respectively.
+There even `XNOR` and `XNAND` gates, which at this point are probably self explanatory.
+
+Parity Check: Responsible for counting the number of zeroes and ones.

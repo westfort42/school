@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
@@ -56,6 +57,9 @@
               <button type="submit" class="btn btn-fancy">Submit</button>
             </form>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="username-signed-in"></a></li>
+          </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -64,9 +68,10 @@
       <div class="slide-1">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
-            <h3 class="page-header">Welcome!</h3>
-              <p>Let's talk about our crazy project</p>
+            <div class="col-lg-12 text-center">
+              <h1 class="page-header">Welcome!</h1>
+              <h3 class="page-subheader">Let's talk about our crazy project:</h3>
+              <img class="img-responsive img-center" src="../assets/img/large-full-logo.svg" />
             </div>
           </div>
         </div>
@@ -75,35 +80,341 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-            <h3 class="page-header">Welcome!</h3>
-              <p>Let's talk about our crazy project</p>
+              <h1 class="page-header">1. Project Description</h1>
+              <h3 class="page-subheader">Short &amp; sweet summary:</h3>
+              <p>Our project, like everyone else's, is a <strong>Residence Management System</strong>.</p>
+              <p>There are currently three types of rooms:</p>
+              <ul>
+                <li>Residence halls</li>
+                <li>Apartments</li>
+                <li>Townhouses</li>
+              </ul>
+              <br />
+              <p>There is also a bunch of other stuff to worry about, like meal plans, accomadations, etc. Our task is to design a management system for dealing with these things. Since it was mentioned that our software had to look pretty on mobile and desktop, we decided to go with the ole web browser as our platform (well... and some other stuff &mdash; more on that later).</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="slide-3">
+      <div class="slide-1">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-            <h3 class="page-header">Welcome!</h3>
-              <p>Let's talk about our crazy project</p>
+            <h1 class="page-header">2. Requirement Analysis</h1>
+              <h3 class="page-subheader">1. Quality Requirements</h3>
+              <p>Although it seems straightforward, there are a few things to keep in mind if you've chosen the web as your platform:</p>
+              <ul>
+                <li>Security &mdash; Communication between the server and the client needs to secure. We'll be using HTTPS (which uses SSL). This is built into a part of our tech stack.</li>
+                <li>Speed &mdash; A database query in Java is fast. A database query in JavaScript... not so fast. We need to make sure we keep things feeling fast, whether they actually are or not!</li>
+                <li>Accessibility &mdash; Screen sizes that access the web range from 4 inches wide to 80 inches wide, screen resolutions vary from 240p to 4k, and there are also screen readers to consider.</li>
+              </ul>
+              <br />
+              <p>The awesome thing about the web is that there are already easy ways to satisfy these requirements out there, so its just a matter of implementing them in your project.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="slide-4">
+      <div class="slide-2">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-            <h3 class="page-header">Welcome!</h3>
-              <p>Let's talk about our crazy project</p>
+              <h1 class="page-header">2. Requirement Analysis</h1>
+              <h3 class="page-subheader">2. Functional Requirements</h3>
+              <p>These are some of the features that we think might be necessary in our application:</p>
+              <ul>
+                <li>Login/User System (done!)</li>
+                <li>Admin Panel (in progress)</li>
+                <li>Browsing residences</li>
+                <li>Registering for/reserving residences</li>
+                <li>Room allocation</li>
+                <li>Search functionality (search by room, by type, by building, by floor, etc)</li>
+                <li>Payments (if you want to get fancy)</li>
+              </ul>
+              <br />
+              <p>These might not all be necessary, and some might be a lot more touble than they're worth (see: payments).</p>
             </div>
           </div>
         </div>
       </div>
-      <div><h3>5</h3></div>
-      <div><h3>6</h3></div>
+      <div class="slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">2. Requirement Analysis</h1>
+              <h3 class="page-subheader">3. Technological Requirements</h3>
+              <p>Tech requirements can get messy quickly when you're targeting the web. However, thanks to the efforts of various open-source communities, it's not so bad anymore. Here's what we think we need so far:</p>
+              <ul>
+                <li>Database &mdash; We need something with a dead-simple API, that works well with local borwser storage as well as persistent, back-end storage (remember the speed concerns we mentioned?)</li>
+                <li>Server &mdash; Our database and server-side logic have to exist somewhere, so we need a basic web server.</li>
+                <li>Client &mdash; This is our user interface, which exists in the web browser.</li>
+                <li>Frameworks &amp; dependencies &mdash; This is what makes our lives easier and our development time years shorter. We'll be taking advantage of some great open source stuff, and using it everywhere is our tech stack.</li>
+              </ul>
+              <br />
+              <p>We'll be relying heavily on open source stuff, which we'll get to next.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">3. Requirement Document</h1>
+              <h3 class="page-subheader">1. The Plan</h3>
+              <p>Our two main concerns with development are dev time and application complexity, and our goal is to use a tech stack that simplifies as much as possiblr, while being robust enough to suit our needs. Based on our research, we have the folllowing requirements:</p>
+              <ul>
+                <li>Easy database communication &amp; synchronization &mdash; This is achieved through a framework called Hood.ie</li>
+                <li>UI framework supporting multiple screen sizes/resoutions &mdash; For this, we're using Bootstrap.</li>
+                <li>Easy DOM manipulation &mdash; Obviously for this, we've got to use jQuery.</li>
+                <li>Hosting &mdash; We'll use Ubuntu 14.04 running nginx and Node.js</li>
+              </ul>
+              <br />
+              <p>Next, we'll talk about what we're using to actually make that happen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">3. Requirement Document</h1>
+              <h3 class="page-subheader">2. Components</h3>
+              <p>Here's a quick list of all the open source software we're using:</p>
+              <ul>
+                <li>Hood.ie</li>
+                <li>CouchDB</li>
+                <li>Node.js</li>
+                <li>NPM</li>
+                <li>Git</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>LESS</li>
+                <li>Backbone.js</li>
+                <li>Ubuntu</li>
+                <li>nginx</li>
+              </ul>
+              <br />
+              <p>We use HTML, CSS, and JavaScript in this project. Technicaly, Erlang is used as well, but we won't need to write any Erlang thanks to our frameworks.
+              <p>As our project evolves, some of this may change.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">4. System Design</h1>
+              <h3 class="page-subheader">1. MVC - Models</h3>
+              <p>These are our data models:</p>
+              <ul>
+                <li>Users</li>
+                <ul>
+                  <li>Name</li>
+                  <li>Password</li>
+                  <li>Email (for password reset)</li>
+                  <li>ID (automatically generated by database)</li>
+                  <li>Admin (Boolean)</li>
+                </ul>
+                <li>Rooms</li>
+                <ul>
+                  <li>Number</li>
+                  <li>Floor</li>
+                  <li>Building</li>
+                  <li>Type</li>
+                  <li>Reserved (Boolean)</li>
+                  <li>Cost</li>
+                  <li>Assignee</li>
+                  <li>ID (generated by database)</li>
+                </ul>
+              </ul>
+              <br />
+              <p>More data models can be added as necessary.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">4. System Design</h1>
+              <h3 class="page-subheader">2. MVC - Views</h3>
+              <p>These are our views. You can think of them as templates, and webpages are made up of collections of templates.</p>
+              <ul>
+                <li>Menu</li>
+                <li>Search bar</li>
+                <li>Search results</li>
+                <li>Browse</li>
+                <li>Sign up/sign in/reset password</li>
+                <li>Room snippet</li>
+                <li>View room</li>
+                <li>Reserve room</li>
+                <li>Admin</li>
+              </ul>
+              <br />
+              <p>These are handled by a router, which is provided by Backbone.js</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">4. System Design</h1>
+              <h3 class="page-subheader">3. MVC - Controller</h3>
+              <p>A controller maps a collection of views to a URL, which makes an actual webpage.</p>
+              <ul>
+                <li>Home &mdash; mapped to the root of our URL</li>
+                <li>Browse &mdash; <code>/browse/:id</code></li>
+                <li>Search &mdash; <code>/search?:query</code></li>
+                <li>Room &mdash; <code>/room/:id/:type</code></li>
+                <li>Admin &mdash; <code>/admin</code></li>
+              </ul>
+              <br />
+              <p>Again, Backbone.js's router handles the mapping.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="page-header">4. System Design</h1>
+              <h3 class="page-subheader">4. UMLs</h3>
+              <p>Showing you all of our UML's would be extremely boring, so here's the one for our users, which is pretty straightforward.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="../assets/img/uml-user.svg" class="imgresponsive img-center" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">5. Use Cases</h1>
+              <h3 class="page-subheader">1. A user wants to reserve a residence.</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>User Action</h3>
+              <p>1. Click 'browse'</p>
+              <p>3. Click desired room</p>
+              <p>5. Click reserve.</p>
+            </div>
+            <div class="col-sm-6">
+              <h3>System Response</h3>
+              <p>2. Render browse view, wait for input or click event.</p>
+              <p>4. Render room view, getting room info by ID from database.</p>
+              <p>6. Change value of <code>reserved</code> for that room to <code>true</code>.
+              <p>7. Display success message to user.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">5. Use Cases</h1>
+              <h3 class="page-subheader">2. A user wants to sign up.</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>User Action</h3>
+              <p>1. Click 'browse', click 'sign up'.</p>
+              <p>3. Input user name and password (twice).</p>
+              <p>4. Click 'submit' (or press 'enter').</p>
+            </div>
+            <div class="col-sm-6">
+              <h3>System Response</h3>
+              <p>2. Display 'sign up' dialog box, wait for input.</p>
+              <br />
+              <br />
+              <p>5. Check to see if passwords match, create new user in database from the data.</p>
+              <p>6. Log user in, granting all user privileges.
+              <p>7. Display success message to user.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="page-header">6. Mockups</h1>
+              <h3 class="page-subheader">1. Menu</h3>
+              <p>Our design approach was mobile first, so the mobile layout is the default, and the desktop expands to fill the screen.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="../assets/img/view-menu.svg" class="img-responsive img-center" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+            <h1 class="page-header">6. Mockups</h1>
+              <h3 class="page-subheader">2. Browse Rooms</h3>
+              <p>This is just a list of rooms. The icon denotes what type of room it is.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="../assets/img/view-browse-rooms.svg" class="img-responsive img-center" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+            <h1 class="page-header">6. Mockups</h1>
+              <h3 class="page-subheader">3. Single Room</h3>
+              <p>This is the view for a single room.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="../assets/img/view-rooms.svg" class="img-responsive img-center" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">7. Version/Dependency Control</h1>
+              <h3 class="page-subheader">1. Version control &mdash; git &amp; SemVer</h3>
+              <p>With any project that uses the incremental model, there are a ton of changes being made to this project by different group members. Typically, this is very hard to keep track of, but thanks to GitHub (and git), we can easily track each members contributions, changes, etc.</p>
+              <p>GitHub allows you to stage each change to the source code as a 'commit', which is then synced with the master repository. Each commit contains a message explaining the change, shows a diff highlighting what was changed, and allows to reverse the change if necessary. There are also a million other features I won't mention here.</p>
+              <p>In the spirit of open source software, we use SemVer to dictate the version number. That means that our project won't be at version 1.0.0 when it releases, but something more like 7.2.11 (for example). SemVer versioning is simple; <code>MAJOR.MINOR.PATCH</code>.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+            <h1 class="page-header">7. Version/Dependency Control</h1>
+              <h3 class="page-subheader">2. Dependency control &mdash; NPM</h3>
+              <p>NPM stands for 'Node Package Manager'. It is a package repository for JavaScript packages.</p>
+              <p>In our project, we maintain dependencies (all the open source stuff we used counts as a dependency) through a file called <code>package.json</code>. This file lists the name and version of each package we're using, so everyone running the development branch of the repository can build the app from the same dependencies as everyone else.</p>
+              <p>To get a development branch up and running, you would run the command <code>$ git clone </code> followed by the name of our master repository. From there, its as simple as running <code>$ npm install</code> to download dependencies. Running the project is done by running <code>$ hoodie start</code>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!--   version control -->
 
     <script src="assets/vendor/jquery-2.1.0.min.js"></script>
     <script src="assets/vendor/bootstrap/bootstrap.js"></script>
