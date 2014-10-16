@@ -429,3 +429,18 @@ Local variables are defined with `let`. There's also `letrec`, which allows func
 ######Structures in Racket
 
 Well obviously you're going to have to use lists. There is a **huge** example that does a binary tree implementation, so just go look at that (its in the class notes).
+
+Exam 1
+======
+
+Closed notes/everything. For each question, you have about 12 minutes. There are no questions that will require you to write code. We need to know a few things:
+- What is **declarative** programming? (should it avoid side-effects, etc)
+- How does **declarative concurrency** work? How do you control a thread so that it will not race?
+- Functional programming - explain the types of reduction, *especially beta reduction*
+- What is a combinator?
+- How do you enhance a recursive function? (Reducing depth, tail recursion, etc)
+- How would you search for an element in a tree?
+- What is lazy evaluation/loading?
+- What is a **stream**? How do you deal with a stream?
+- How does scoping work? (Static scoping, dynamic scoping, etc). If different types of scoping are used, how will that affect output? What type of scoping dos OZ use (it's only one and its a default)
+- Given a function, what's the output?

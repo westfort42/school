@@ -522,3 +522,70 @@ There are also the exclusive version of the `AND` and `OR` gates, called the `XA
 There even `XNOR` and `XNAND` gates, which at this point are probably self explanatory.
 
 Parity Check: Responsible for counting the number of zeroes and ones.
+
+---
+
+Lecture 12
+==========
+
+*Oct 16*
+
+**Midterm 1: Tuesday lol**
+
+There may be a question about parity generators on checkers on the midterm. Don't screw it up I guess.
+
+A question on Assignment 4 will be about parity.
+
+####Hi-Impedance Outputs
+
+What is impedance? It is resistance (in a circuit).
+
+**The 3-State Buffer**: for the symbol and truth table, `IN` is the data input, and `EN` is the control input. For `EN = 0`, the output value is Hi-Z (regardless of input).
+
+If you have a whole big pile of these buffers in your circuit, it will change the ouput significantly based whether the buffers are on or off. There's a slide for this in the lecture notes.
+
+####Chapter 3: Combinational Circuit Design
+
+A combination logic circuit has:
+- a set of `m` Boolean inputs
+- a set of `n` Boolean outputs
+- `n` switching functions, each mapping `2^m` input cobinations to an output such that the current output depends only on the current input values
+
+This part introduces *block diagrams* which is obviously going to be very hard to draw in this text editor, so we'll see what happens.
+
+######Design:
+- decompose the function into blocks
+- decompose each block's function into smaller blocks, repeating as necessary
+- any block not composed is called a *primitive* block
+
+Yeah you're going to have to look at some slides for this, I can't draw in here.
+
+######Propagation Delay
+This is just time delay. Its the time is takes for some stuff to go through a gate (the time it takes for an input to become and output).
+
+######Design Example
+1. Specification
+    - BCD to Excess-3 code converter
+    - Transforms binary coded decimal to excess-3 code for decimal digits
+    - Goes from 0 - 9 (or in binary, 0000 to 1001)
+    - Excess-3 will be more than that (0011 to 1100) *I think*
+    - Remember to always consider how many variables you will need to show output properly. Obviously in this case, you'll only need four (since the max number is 12 AKA `1100` so don't even sweat it)
+    - Remember the truth table?
+```
+Inputs    |  Outputs
+-------   |  -------
+A B C D   |  W X Y Z
+0 0 0 0   |  0 0 1 1
+0 0 0 1   |  0 1 0 0
+0 0 1 0   |  0 1 0 1
+```
+2. Formulation
+    - Conversion of 4-bit codes can most easily be formulated by a truth table
+    - Variables: a,b,c,d for BCD, w,x,y,z for Excess-3
+    - Your don't cares are BCD 1010 to 1111
+    - Just try to think of a pattern that changes `0000` to `0011`, `0001` to `0100`, and so on.
+    - For this one, you need four 4x4 K-Maps. I think there's an easier way though, so don't go thinking you need to use a huge pile of K-Maps every time.
+
+**Important**: you'll need to know how to convert circuit diagrams from however they're represented to `NAND` only, `NOR` only, using either SOP or POS, etc.
+
+Sample question: Design combinational circuit using something, then simplify, then implement, then implement using only NAND. Now convert from binary to dec haha.

@@ -13,5 +13,8 @@ DATES
     - Graphics Project 2
     - Software Engineering Individual Assignment 1
     - Programming Languages Assignment 1 (due Oct 29)
-    - All midterms lol
+
+####All midterms lol
     - October 27 class for 1hr (1:00PM-2:00PM).
+    - Monday, Lab Test 1 in Databases. Will require use of MS Access
+    - Tuesday: Graphics Project Due Date/Presentation and Comp Architecture Midterm
