@@ -17,4 +17,4 @@ DATES
 ####All midterms lol
     - October 27 class for 1hr (1:00PM-2:00PM).
     - Monday, Lab Test 1 in Databases. Will require use of MS Access
-    - Tuesday: Graphics Project Due Date/Presentation and Comp Architecture Midterm
+    - Tuesday: Graphics Project Due Date/Presentation and Comp Architecture Midterm and Software Engineering Midterm
