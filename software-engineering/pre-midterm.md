@@ -5,7 +5,7 @@ Lecture 1
 
 Figure out what we actually have to do for the project - Dr Wei says mobile compatibility, what does that really mean? Write the API in Java and the front-end in Ember?
 
-Group Project: 	
+Group Project:
 - Derek - API/ORM
 - Issac - ORM/Server-side logic
 - McCutcheons - DB
@@ -103,9 +103,9 @@ It's a statment describing what the proposed system should do. Its **not** "deli
 
 Types of requirements:
 
-1. Functional requirements - what the thing should do. What're the input devices? How about the output? Is there a DB? Is it synchronous? 
+1. Functional requirements - what the thing should do. What're the input devices? How about the output? Is there a DB? Is it synchronous?
 2. Quality requirements - how good it should be. Usually, you'll want to put "good" and "secure". Quality requirements must be *verifiable*, so its stuff like response time, throughput, reiability/availability, failure recovery, etc.
-3. Platform requirements - constraints on the environment and tech. In 2002, its always "JVM". In 2014, its always "web". In 2016, its always "Oculus Rift". 
+3. Platform requirements - constraints on the environment and tech. In 2002, its always "JVM". In 2014, its always "web". In 2016, its always "Oculus Rift".
 4. Process requirements - constraints on the plans and methods. I don't know what the point of this one is.
 
 If you don't understand any of this, try looking at the README for any succesful open source project.
@@ -197,4 +197,54 @@ A model should:
 - permit analysis and review of those designs
 - contain documentation
 
+Lecture ???
+===========
 
+*Oct 16*
+
+The stupid midterm will be **next Tuesday**. As of 1:05PM, I have no idea what's going on in this class.
+
+Assignment 1: Wtf... mark received was 78/100. I got marks reduced for suggesting that we implement fast search queries. I forgot that was bad.
+
+####Midterm Info:
+######Chapter 1
+- some characteristics of software
+- what is software?
+- software quality
+- software lifecycle
+
+######Chpater 2
+- OO vs structured
+- classes and objects
+- class generalization and inheritance
+- polymorphism, encapsulation
+
+######Chapter 3
+- Reuse in SE?
+    - develop software with code reusability in mind, etc
+- frameworks (socks and hooks)
+  > wtf does that mean???
+- client-server architecture
+- OCSF & SimpleClient, protocols like TCP/IP, HTTP, whatever
+- you need to be able to understand a class diagram, UML, whatever
+
+######Chapter 4
+- domain analysis
+- scope of software and defining the problem
+- functional and quality requirements
+- use cases for the requirements
+
+######Chapter 5
+- UML class diagrams
+- class generalization, object diagram
+- object diagram and interface
+- derive from class diagram
+    - identify attributes and operations
+    - define classes
+    - distribute the attributes and operations to classes
+
+######Chapter 6
+- design patterns
+    - specialization-occurence pattern
+    - player-role pattern
+    - 
