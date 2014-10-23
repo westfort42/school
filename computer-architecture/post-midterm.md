@@ -13,7 +13,7 @@ Two ways of decoder expansion: internal and expansion (internal means changing t
 
 Example: 3 to 8 line decoder for generating `F = m(1,4,6)`.
 
-[example]: img/3to8.png "Decoder example"
+<img src="img/3to8.png" />
 
 ######On assignments/exam: never write the internal design, just use the block diagram (UNLESS SPECIFICALLY ASKED TO DESIGN THE DECODER).
 
